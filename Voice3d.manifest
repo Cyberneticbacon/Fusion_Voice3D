@@ -1,0 +1,13 @@
+{
+	"autodeskProduct":	"Fusion",
+	"type":	"addin",
+	"id":	"a0850b9e-eef7-4a9b-91a1-b7792cf36011",
+	"author":	"Jackson Picone",
+	"description":	{
+		"":	""
+	},
+	"version":	"0.01",
+	"runOnStartup":	false,
+	"supportedOS":	"windows|mac",
+	"editEnabled":	true
+}
