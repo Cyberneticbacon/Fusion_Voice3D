@@ -6,6 +6,7 @@ import threading
 from . import functions as f
 from . import target_assignment as ta
 import adsk.core
+from . import all_functions as af
 server = None
 
 def run(context):
@@ -13,6 +14,7 @@ def run(context):
         if context == "quit":
             raise Exception("Quit")
         global server
+        #af.run(context)
         ta.assign_letters_to_visible_faces()
         server = SimpleXMLRPCServer(("localhost", 8000))
         server.register_function(f.parse_command, "parse_command")
@@ -20,7 +22,6 @@ def run(context):
         server_thread = threading.Thread(target=server.serve_forever)
         server_thread.daemon = True
         server_thread.start()
-        f.parse_command("command: camera_move\n" + "\n" + "destination:  |   | 0 0 1")
         print("Server is running...")
 
     except:

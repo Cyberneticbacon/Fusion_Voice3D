@@ -24,15 +24,16 @@ def assign_letters_to_visible_faces_private():
     for body in bodies:
         for face in body.faces:
             try: 
-                    # Assign a letter to the visible face
-                    print(f"Face ID: {face.tempId}, Letter: {letter}")
-                    face.attributes.add("talon.labels", "color:letter", color_names[color_index % len(color_names)] + ":" + letter)
-                    # Increment the letter
                     letter = chr(ord(letter) + 1)
                     if letter > 'Z':
                         letter = 'A'  # Reset to 'A' after 'Z'
                         color_index += 1
                         color_effect = adsk.fusion.CustomGraphicsSolidColorEffect.create(color_wheel[color_index % len(color_wheel)])
+                    
+                    # Assign a letter to the visible face
+                    print(f"Face ID: {face.tempId}, Letter: {letter}")
+                    face.attributes.add("talon.labels", "color:letter", color_names[color_index % len(color_names)] + ":" + letter)
+                    # Increment the letter
                     tempGraphics = root_comp.customGraphicsGroups.add()
                     startPoint = face.pointOnFace
                     endPoint = adsk.core.Point3D.create(face.pointOnFace.x, face.pointOnFace.y, face.pointOnFace.z)

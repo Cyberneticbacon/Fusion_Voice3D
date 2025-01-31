@@ -1,0 +1,2854 @@
+Alert, AlertCommand
+perfFeedback, PerformanceFeedbackCommand
+Notification Center, NotificationCenterCommand
+Cloud service maintenance., CloudServiceStatusCommand
+Platform Support Discontinued Message, PlatformVerSupportDiscontinuedCommand
+Whats New Banner Message, WhatsNewBanerCommand
+ 1, CloudStatusCommand
+, FeaturePacksCommand
+Preview Upcoming Paid Features, PreviewPacksCommand
+Unsupported Windows build banner Message, UnsupportedWindowsBuildBannerCommand
+Remove Links, RemoveLinks
+Show/Hide, VisibilityToggleCmd
+Open, OpenCommandNew
+Export, ExportCommand
+Close, CloseDocumentCommand
+OK, CommitCommand
+Select, SelectCommand
+Cancel, CancelCommand
+Clear all Alerts, ClearAllAlertsCommand
+Undo, UndoCommand
+Redo, RedoCommand
+Selection Filters, SelectionFilterCommand
+Empty, EmptyInfo
+Select Face Priority, SelectFacePriorityCommand
+Select Body Priority, SelectBodyPriorityCommand
+Select Edge Priority, SelectEdgePriorityCommand
+Select Component Priority, SelectComponentPriorityCommand
+Select Face Priority, SelectTSplineFacePriorityCommand
+Select Body Priority, SelectTSplineBodyPriorityCommand
+Select Edge Priority, SelectTSplineEdgePriorityCommand
+Workspace, ActivateEnvironmentCommand
+Undo Multiple, UndoDropDown
+Redo Multiple, RedoDropDown
+Asset Shell, AssetShellCommand
+Exit Application, ExitApplicationCommand
+Clear cache data, ClearUserCacheCommand
+Service Utility, ServiceUtilityCommand
+Check for Updates, UpdateNowCommand
+Switch Asset, SwitchAssetCommand
+Export Archive, CopyToDesktopCommand
+Save As, SaveDocumentAsCommand
+Capture Image, SaveAsImageCommand
+New Design, NewDocumentCommand
+New Design From File, NewFromLocalCommand
+New Single Document, NewSingleDocumentCommand
+Rename, RenameCommand
+Open, OpenDocumentCommand
+Save Local, SaveDocumentCommand
+Close All, CloseAllDocumentsCommand
+My Active Docs, CurrentlyOpenDocumentsCommand
+Recent Documents, RecentDocumentsCommand
+Create, CreateFromDesignCommand
+Drag and drop from Dashboard, ContinueDragFromDashboardCommand
+Open, PLM360OpenAttachmentCommand
+Import, PLM360FileImportCommand
+AutoSave, AutoSaveFilesCommand
+Save, PLM360SaveCommand
+Save As, PLM360SaveAsCommand
+SaveNonFusion, PLM360SaveNonFusionFileCommand
+New Item, PLM360NewItemCommand
+Fusion Team Notification, PLM360NotifyMessageCommand
+Import, PLM360FileBrowserCommand
+ Launch Browser, PLM360LaunchStandaloneBrowser
+View Details on Web, PLM360OpenDetailsCommand
+Refresh renamed file, PLM360RefreshRenamedItemCommand
+Create, DashboardCreateMilestoneCommand
+Update, DashboardUpdateMilestoneCommand
+File, FileSubMenuCommand
+Import an F3Z archive, F3ZFileImportCommand
+Job Status, ShowJobManagerDlgCmd
+Quick Setup, LearningPaletteCommand
+Show Quick Setup, ShowLearningPaletteCommand
+Hide Quick Setup, HideLearningPaletteCommand
+Scripting Documentation, ScriptingDocumentationCommand
+About, AboutBoxCommand
+Report a Problem, ReportProblemCmd
+Demo Controls, DemoControls2Command
+Test Toolkit, TestToolkitCommand
+Layout Option, TestOptionGroupCommand
+Test Table UI, TestTableCommand
+Test TabBar, TestTabBarCommand
+Show HUD, ShowHUDCommand
+Diagnostic Log Files, GatherDiagnosticsDataCommand
+AskAndRun, AskAndRunCmd
+Cut, CutCommand
+Delete, DeleteCommand
+Repeat Press Pull, RepeatCommand
+Hide Text Commands, HideTextCommandsCommand
+Show Text Commands, ShowTextCommandsCommand
+Run Build Acceptance Tests, RunTestsCommand
+What's New, ProductTourGuideCommand
+Sign In, ShareCommand
+Show Navigation Bar, ShowNavigationToolbarCommand
+Hide Navigation Bar, HideNavigationToolbarCommand
+Show Browser, ShowBrowserCommand
+Hide Browser, HideBrowserCommand
+Help, HelpGroupCommand
+Self-Paced Learning, HelpCommand
+Learning and Documentation, LearningAndHelpCommand
+Community, CommunityCommand
+Support and Diagnostics, SupportAndDiagnosticsCommand
+Product Documentation, LearningAndTutorialsCommand
+Blog, BlogCommand
+Fusion API, APIHelpCommand
+Search, SearchCommand
+Forum, ForumCommand
+Insider Program, SubmitAnIdeaCommand
+Connect with an Expert, StreetTeamCommand
+What's New, WhatsNewCommand
+Gallery, GalleryCommand
+Fusion App Store, ExchangeAppStoreCommand
+Subscription, SubscriptionCommand
+Check for Updates, CheckUpdatesCommand
+Graphics Diagnostic, GraphicsDiagnosticsCommand
+Essential Videos, VideosCommand
+Get Support, FeedbackCommand
+Team Hub Onboarding Analytics, THOAnalyticsCommand
+Give Feedback, PreReleaseFeedbackCommand
+Join Discussion, JoinDiscussionCommand
+IdeaStation, IdeaStationCommand
+Quick Start, QuickStartCommand
+Tutorials, TutorialsCommand
+Minimize, MinimizeCommand
+Zoom Window, ZoomWindowCommand
+Bring All to Front, BringAllToFrontCommand
+Enable Incremental Move, EnableAdaptiveSnapCmd
+Disable Incremental Move, DisableAdaptiveSnapCmd
+Incremental Move, ToggleIncrementalMoveCmd
+Set Increments, SetSnapValueCmd
+Open Web Browser, OpenWebBrowserCommand
+Reset to Default Layout, ResetToDefaultLayoutCommand
+Preferences, PreferencesCommand
+Run Script, RunScriptCommand
+Tools, ToolsCommand
+Scripts and Add-Ins, ScriptsManagerCommand
+Work Offline, WorkOfflineCommand
+Upload, UploadCommand
+Collaboration Mock Debug, CollaborationMockDebugCmd
+Missing XRef Mock Debug, MissingXRefMockDebugCmd
+Zoom Window, ZoomFitCommandGroup
+Orbit, OrbitCommand
+Free Orbit, FreeOrbitCommand
+Constrained Orbit, ConstrainedOrbitCommand
+Reset Orbit Center, ResetOrbitCenterCommand
+Set Orbit Center, SetOrbitCenterCommand
+Camera Axis Constrained Orbit, PowerAxisOrbitCommand
+Trackball Orbit, TrackballOrbitCommand
+Look At, LookAtCommand
+Pan, PanCommand
+Zoom, ZoomCommand
+Fit, FitCommand
+Zoom Window, ZoomWindowViewCommand
+Rotate View, RotateCommand
+Views, ViewsCommand
+View, ViewWidgetCommand
+Show ViewCube, ShowViewCubeCommand
+Hide ViewCube, HideViewCubeCommand
+Find in Window, FindInWindow
+Find in Browser, FindInBrowser
+Object Visibility, VisibilityOverrideCommand
+Ground Plane Offset, GroundPlaneOffsetCommand
+Enter Full Screen, ShowWorkspaceFullScreenCommand
+Exit Full Screen, ShowWorkspaceNormalCommand
+Show Data Panel, DashboardModeOpenCommand
+Hide Data Panel, DashboardModeCloseCommand
+Switch Data Panel, DashboardModeSwitchCommand
+Activate Project Filter, ActivateProjectFilterCommand
+Show Comments, ShowActivityFeedCommand
+Hide Comments, HideActivityFeedCommand
+Return to Previous Workspace, ReturnToEnvironmentCommand
+Cycle Workspaces Forward, CycleWorkspacesForwardCommand
+Cycle Workspaces Backward, CycleWorkspacesBackwardCommand
+Start Transcripting, StartTranscriptingCommand
+Start Performance Transcripting, StartPerfTranscriptingCommand
+Stop Transcripting, StopTranscriptingCommand
+Replay Transcript, ReplayTranscriptCommand
+Show Debug Dialog, ShowDebugDialogCommand
+Hide Debug Dialog, HideDebugDialogCommand
+Show Command Palette, ShowCommandPaletteCommand
+Hide Command Palette, HideCommandPaletteCommand
+Destroy Debug Dialog, DestroyDebugDialogCommand
+Show Command Palette, ShowQMLCommandPaletteCommand
+Hide Command Palette, HideQMLCommandPaletteCommand
+Share Screenshot, ShareSheetsCommand
+Display Settings, ViewDisplayCommand
+Effects, ViewEffectCommand
+Environment Dome, ViewDomeCommand
+Ground Plane, ViewGroundPlaneCommand
+Ground Shadow, ViewGroundShadowCommand
+Ground Reflection, ViewGroundReflectionCommand
+Ambient Occlusion, ViewAmbientOcclusionCommand
+NPR Effect, ViewNPREffectCommand
+Environment, ViewEnvCommand
+Anti-Aliasing, ViewMSAACommand
+Selection Effect, ViewSelectionEffectCommand
+Visual Style, ViewVisualStyleCommand
+Camera, ViewCameraCommand
+Object Shadow, ViewObjectShadowCommand
+Component Color Cycling On, ViewColorCyclingOnCmd
+Component Color Cycling Off, ViewColorCyclingOffCmd
+Display Component Colors, ViewColorCyclingToggleCmd
+Layout Grid, ViewLayoutGridOnCommand
+Layout Grid Lock, ViewLayoutGridLockCommand
+Snap to Grid, ToggleGridSnapCommand
+Grid and Snaps, ViewLayoutGridCommand
+Grid Settings, DefineGridCmd
+In-canvas Render, InCanvasRenderCommand
+In-canvas Render Settings, InCanvasRenderSettingsCommand
+Viewports, SplitViewWindowSyncCommand
+Synchronize Views, SplitViewWindowSyncOnCommand
+Split View, SplitViewCommand
+Single View, SingleViewCmd
+Multiple Views, MultiViewCmd
+Reset Views, SplitViewResetCmd
+Visual Style, SplitViewVisualStyleCommand
+Camera, SplitViewCameraCommand
+New Named View, AddNamedViewCommand
+Delete, RemoveNamedViewCommand
+Update Named View, UpdateNamedViewCameraCommand
+Update Named View Name, UpdateNamedViewNameCommand
+Restore Named View, RestoreCameraCommand
+Recover Documents (2), NotifyAutoSaveFilesCommand
+Home, HomeCommand
+Back, GoBackwardCommand
+Forward, GoForwardCommand
+Refresh, RefreshCommand
+no user logged in, UserDisplayNameCommand
+My Active Pages, CurrentlyOpenPagesCommand
+Close All, CloseAllDocumentTabsCommand
+Close, CloseDocumentTabCommand
+Show Next Tab, CycleTabsForwardCommand
+Show Previous Tab, CycleTabsBackwardCommand
+My Profile, GoToMyProfileCommand
+Autodesk Account, GoToMyAccountCommand
+Subscribe Now, SubscribeNowCommand
+My Cloud, MyCloudCommand
+Switch Team, UserHubsCommand
+Join Team, JoinTeamCommand
+Old User To Team From Invite, OldUserToTeamFromInviteCommand
+Personal HubRetirement, PersonalHubRetirementCommand
+Sign Out, QontextLogoutCommand
+Close All and Sign Out, CloseAllDocumentsAndLogoutCommand
+Expired: Subscribe Now, TryToBuyCommand
+Purchase, PurchasePackCommand
+Trial, ExtensionTrialCommand
+auto login, AutoLoginCommand
+0 E - 0 W, HealthStatusCommand
+Basic Access, BasicAccessCommand
+Share File Link, SimpleSharingPublicLinkCommand
+Render, A360RenderCommand
+Copy documents, CopyDocumentsCommand
+Move documents, MoveDocumentsCommand
+Transfer files from personal to team hub, TransferToTeamHubCommand
+Mark documents for open, MarkDocumentsForOpenCommand
+Update All Related Items, UpdateRelatedItemsCommand
+Show History, HistoryCommand
+Show Team Switcher, TeamSwitcherCommand
+Hide Learning Panel, LearningPanelCloseCommand
+Show Learning Panel, LearningPanelOpenCommand
+Close Guide, GuideCloseCommand
+Open Guide, GuideOpenCommand
+Upgrade to a Fusion subscription, RequestTrialCommand
+More Help, MoreHelpCommand
+Make Editable, ActiveDocumentActivateCommand
+Make Read-Only, ActiveDocumentDeactivateCommand
+My Editable Documents, ActiveDocumentsShowActiveDocumentsListCommand
+Learn More, ActiveDocumentsLearnMoreBasicAccessCommand
+Restricted User, RestrictedUserCommand
+Load In Home Tab, LoadInHomeTabCommand
+Share Feedback, ShareFeedbackCommand
+, GoToFusionTeamCmdDef
+Show NTest, NTestExcCommand
+Side Panel Execute JS Command, SidePanelCommand
+Content Panel Execute JS Command, ContentPanelCommand
+Data Panel Execute JS Command, DataPanelCommand
+Report Performance Issue, PerfFeedbackRecorderCmd
+Autodesk Assistant, ChatCommand
+Autodesk Assistant, AAChatCommand
+Show NTest, NTestExcMetaCommand
+Copy, CopyCommand
+Paste, PasteCommand
+Save As SAT, SaveAsSATCommand
+Save As ASM, SaveAsASMCommand
+Manage Materials, MaterialCommand
+Manage Physical Materials, PhysicalMaterialEditOnlyCommand
+Suppress Appearance Overrides, SuppressAppearanceCmd
+Remove Appearance Override, RemoveOverrideCommand
+Show Affected Faces, ShowAffectedFacesCommand
+Launch Data Browser, DataBrowserCommand
+Dump Entity Info, DumpEntityCommand
+Sanity check bodies, SanityCheckCommand
+ASM Debug Options, ASMDebugOptionsCommand
+ASM Debug Checks, ASMDebugChecksCommand
+Entity Finder, EntityFinderCommand
+Show All Components, ShowAllComponentsCmd
+Show All Bodies, ShowAllBodiesCmd
+Selectable/Unselectable, SelectabilityToggleCmd
+Show/Hide Planes, PlanesVisibilityToggleCmd
+Show/Hide Axes, AxesVisibilityToggleCmd
+Show/Hide Points, PointsVisibilityToggleCmd
+Show All, ShowAllGroupMembersCmd
+Interactive command to run Python Script, PythonInteractiveCommand
+Sequential command to run Python Script, PythonSequentialCommand
+CommentObject, CommentObjectCommand
+ViewComment, ViewCommentCmd
+Measure, MeasureCommand
+Cycle Component Color, CycleComponentColorCmd
+Remove Visibility Overrides, RemoveVisibilityOverridesCommand
+Create Selection Set, CreateSelectionGroupCmd
+Select, SelectSelectionGroupCmd
+Update Selection Set, UpdateSelectionGroupCmd
+Extrude, Extrude
+Edit Feature, FusionExtrudeEditCommand
+Edit Feature, FusionSurfaceExtrudeEditCommand
+Compute All, FusionComputeAllCommand
+Capture Design History, ConvertToPMDesignCommand
+Offset Face, FusionOffsetFacesCommand
+Edit Feature, FusionOffsetFacesEditCommand
+Extrude, SurfaceExtrude
+Activate, FusionActivateLocalCompCmd
+Show/Hide associated bodies, GhostedBodyToggleCommand
+Insert Component, FusionImportCommand
+Insert Component, FusionImportCommandFromToolbar
+Insert Component from a local File, FusionImportFromLocalCommand
+Replace Component, FusionImportAndReplaceCommand
+Change Active Units, FusionChangeActiveUnitsCommand
+Change Active Units, FusionChangeActiveUnitsInternalCommand
+Assign Item Number, PIMAssignItemNumberCmd
+Quick Release, PIMQuickReleaseCmd
+Release with Change Order, PIMECOReleaseCmd
+Dashboard, PIMGoToDashboardCmd
+Details, PIMGoToItemDetailsCmd
+Change Orders, PIMGoToChangeOrderCmd
+Bill of Materials, MaterializedBomCmd
+Change Thread Type, ChangeThreadTypeCommand
+Delete, FusionDeleteCommand
+Resolve Component, FusionResolveMissingXRefCmd
+Scene Settings, RenderingEnvCmd
+Appearance, AppearanceCommand
+Physical Material, PhysicalMaterialCommand
+Remove Appearance Override, FusionRemoveOverrideCommand
+Return to Inventor, ReturnToExternalAppCmdDefINV
+Return to AutoCAD, ReturnToExternalAppCmdDefACAD
+Return to Moldflow, ReturnToExternalAppCmdDefMoldflow
+Fillet, FusionFilletEdgesCommand
+Gap Fill, FusionGapFillCommand
+Edit Feature, DCFusionGapFillEditCmd
+Edit Fillet, FusionFilletEditCommand
+Hole, FusionHoleCommand
+Edit Hole, FusionHoleEditCommand
+Edit Feature, FusionDcHoleEditCommand
+Thread, FusionThreadCommand
+Edit Thread, FusionThreadEditCommand
+Edit Feature, FusionDcThreadEditCommand
+Chamfer, FusionChamferCommand
+Edit Chamfer, FusionChamferEditCommand
+Delete Faces, FusionDeleteFacesCommand
+Edit Feature, FusionDcDeleteFaceEditCommand
+Replace Face, FusionReplaceFaceCommand
+Emboss, EmbossCmd
+Edit Feature, FusionDcEmbossEditCmd
+Edit Features, FusionDcReplaceFaceEditCommand
+Shell, FusionShellBodyCommand
+Shell manager, ShellManagerCommand
+Edit Feature, FusionDcShellFeatureEditCommand
+Move, FusionMoveComponentsCommand
+Move/Copy, FusionMoveCommand
+Duplicate With Joints, FusionDuplicateWithJointsCommand
+Edit Feature, FusionDcMoveBodyEditCommand
+Edit Feature, FusionDcMoveCopyEditCommand
+Edit Initial Position, FusionDcEditInitialPositionCommand
+Edit Initial Position, FusionEditInitialPositionCommand
+Edit Feature, FusionDcAlignEditCommand
+Drive Joints, FusionMoveJointsCommand
+Align Components, AlignComponentsCmd
+Align, AlignGeometryCmd
+Align, AlignCmd
+Suppress, SuppressJointOccurrenceCmd
+Unsuppress, UnsuppressJointOccurrenceCmd
+Suppress, SuppressTransitionalRelationshipOccurrenceCmd
+Unsuppress, UnsuppressTransitionalRelationshipOccurrenceCmd
+Suppress, SuppressRigidGroupCmd
+Unsuppress, UnsuppressRigidGroupCmd
+Suppress, SuppressMotionRelationshipCmd
+Unsuppress, UnsuppressMotionRelationshipCmd
+New Contact Set, ContactSetCmd
+Edit, EditContactSetCmd
+Suppress, SuppressContactSetCmd
+Unsuppress, UnsuppressContactSetCmd
+Enable Contact Sets, EnableContactSetsCmd
+Enable All Contact, EnableAllContactCmd
+Disable Contact, DisableAllContactCmd
+Lock Motion, LockJointCmd
+Unlock Motion, UnlockJointCmd
+Animate Joint, AnimateJointCmd
+Animate Joint Relationships, AnimateModelCmd
+Go to Home Position, RestoreJointCmd
+Motion Study, FusionMotionStudyCommand
+Edit, EditMotionStudyCmd
+Select Components, SelectJointComponentsCmd
+Select referencing Joints, SelectJointsByComponentCmd
+Select Components, SelectTransRelComponentsCmd
+Select linked Joints, SelectMotionLinkJointsCmd
+Set as Home position, RedefineJointHomeCmd
+Drag Components, FusionDragComponentsCommand
+Component Drag, FusionDragCompControlsCmd
+Mesh Palette, FusionShowSelectionPanelCmd
+Drag Joint Origin, FusionDragJointOriginCommand
+Pin, FusionGroundComponentsCommand
+Unpin, FusionUnGroundComponentsCommand
+Ground To Parent, GroundToParentCommand
+Unground From Parent, UnGroundToParentCommand
+Update, FusionUpdateCommand
+SelectionManager, FusionMultiSelInputTestCmd
+Scale, ModifyScale
+CommandPreviewGraphics, CmdPreviewGraphicsTestCommand
+Interference, InterferenceCheckCommand
+Edit Feature, FusionDcScaleEditCommand
+Isolate, IsolateCmd
+Unisolate, UnisolateCmd
+Unisolate All, UnisolateAllCmd
+Create Sketch, SketchCreate
+Finish Sketch, SketchStop
+Close Config, CloseConfig
+Close TimlineConfigModePanel, CloseTimlineConfigModePanel
+Edit Sketch, SketchActivate
+Edit Profile Sketch, ProfileSketchActivate
+Save Sketch As, SaveSketchAsDWG
+Line, DrawPolyline
+Thicken, FusionSurfaceThickenCommand
+Draft, FusionDraftCommand
+Combine, FusionCombineCommand
+Edit Feature, FusionCombineEditCommand
+Split Body, FusionSplitBodyCommand
+Edit Feature, FusionDcSplitBodyEditCommand
+Edit Feature, FusionDcPartingLineSplitEditCommand
+Edit Feature, FusionDcSplitFaceEditCommand
+Split Face, FusionSplitFaceCommand
+Silhouette Split, FusionPartingLineSplitCmd
+Revolve, Revolve
+Texture Map Controls, TextureMappingCommand
+Edit Feature, FusionRevolveEditCommand
+Edit Feature, FusionSurfaceRevolveEditCommand
+Sweep, Sweep
+Edit Feature, FusionSweepEditCommand
+Edit Feature, FusionSurfaceSweepEditCommand
+Loft, SolidLoft
+Edit Feature, FusionLoftEditCommand
+Loft, TSplineLoft
+Rib, FusionRibCommand
+Edit Feature, FusionDcRibEditCommand
+Web, FusionWebCommand
+Edit Feature, FusionDcWebEditCommand
+Boundary Fill, SurfaceSculpt
+Edit Feature, FusionSculptEditCommand
+Loft, SurfaceLoft
+Edit Feature, FusionSurfaceLoftEditCommand
+Box, PrimitiveBox
+Edit Feature, BoxPrimitiveEditCommand
+Box, SurfPrimitiveBox
+Cylinder, PrimitiveCylinder
+Edit Feature, CylinderPrimitiveEditCommand
+Cylinder, SurfPrimitiveCylinder
+Sphere, PrimitiveSphere
+Edit Feature, SpherePrimitiveEditCommand
+Edit Feature, CoilPrimitiveEditCommand
+Sphere, SurfPrimitiveSphere
+Torus, PrimitiveTorus
+Edit Feature, TorusPrimitiveEditCommand
+Torus, Torus
+Torus, SurfPrimitiveTorus
+Torus, SurfTorus
+Coil, PrimitiveCoil
+Coil, Coil
+Coil, SurfPrimitiveCoil
+Coil, SurfCoil
+Connector Obstacle, ConnectorObstacleCmd
+Edit Feature, ConnectorObstacleEditCmd
+Pipe, PrimitivePipe
+Edit Feature, PipePrimitiveEditCommand
+Pipe, SurfPrimitivePipe
+3D Print, ThreeDprintCmdDef
+Automated Modeling, AutomatedModelingCommand
+Edit Feature, FusionAutomatedModelingEditCommand
+Box, Box
+Box, SurfBox
+Cylinder, Cylinder
+Cylinder, SurfCylinder
+Sphere, Sphere
+Sphere, SurfSphere
+Extend, FusionExtendCommand
+Edit Feature, FusionDcSurfaceExtendEditCommand
+Edit Face, EditFaceCommand
+Edit Feature, FusionDcFilletEditCommand
+Edit Feature, FusionDcFilletFeatureEditCommand
+Edit Feature, FusionDcSurfaceThickenEditCommand
+Edit Feature, FusionDcChamferEditCommand
+Display Configuration Table, FusionShowDesignConfigPanelCmd
+Configure, FusionStartDesignConfigModeCmd
+Configure, ConfigureFeatureCmd
+Configure, ConfigureEntityCmd
+Configure Properties, ConfigurePropertiesCmd
+Design Configuration, DesignConfigurationCmd
+Activate Config, DesignConfigurationActivateRowCmd
+Delete Theme Table, DeleteCustomThemeTableCmd
+Delete Appearance Theme Table, DeleteAppearanceThemeTableCmd
+Configure DC Feature, ConfigureSuppressionCmd
+Move to New Theme Table, MoveToNewThemeTableCmd
+Move to Existing Theme Table, MoveToExistingThemeTableCmd
+Configure Feature Parameter, ConfigureFeatureParameterCmd
+Configure Feature Aspect, ConfigureFeatureAspectCmd
+Configure Visibility, ConfigureVisibilityCmd
+Configure Appearance, ConfigureAppearanceCmd
+Configure Physical Material, ConfigurePhysicalMaterialCmd
+Configure Sheet Metal Rule, ConfigureSheetMetalRuleCmd
+Configure PLastic Rule, ConfigurePlasticRuleCmd
+Delete Physical Material Theme Table, DeletePhysicalMaterialThemeTableCmd
+Delete Plastic Rule Theme Table, DeletePlasticRuleThemeTableCmd
+Delete Sheet Metal Theme Table, DeleteSheetMetalThemeTableCmd
+Configure Aspects For Parent Table, ConfigureAspectsCmd
+Add Aspects to Theme Table, AddAspectsToThemeTableCmd
+Rename Config, DesignConfigurationRenameRowCmd
+Delete Config, DesignConfigurationDeleteRowCmd
+Copy to New Config, DesignConfigurationCopyRowCmd
+Add Configuration, DesignConfigurationAddRowCmd
+End Configuration Mode, DesignConfigurationToolbarCmd
+Refresh configuration factory name, RefreshConfigurationFactoryNameCmd
+Refresh row name in nested configuration, DesignConfigurationUpdateNestedRowNameCmd
+ComputeMinimum, FusionComputeMinimumCommand
+Associative Insert Update, UpdateXRefCommand
+Compute Unresolved, FusionComputeUnresolvedCommand
+Assembly Compute, XRefsBUComputeCmd
+Change Parameters, ChangeParameterCommand
+Open Parameters Dialog in Configuration Mode, OpenParameterDialogInConfigModeCmd
+Configure User Parameter, ConfigureUserParameterCmd
+Reorder Features, FusionReorderCommand
+Convert to DM Feature, ConvertToDMFeatureCommand
+Convert to Parametric, ConvertToPMFeatureCommand
+Do not capture Design History, ConvertToDMDesignCommand
+Dump Dependency Graph, FusionDumpGraphCommand
+Review warning, FusionLookupErrInfoCommand
+Remove, SoftDeleteCommand
+Finish Base Feature, BaseFeatureStop
+Edit, BaseFeatureActivate
+Create Base Feature, BaseFeatureCreationCommand
+Finish Form, TSplineBaseFeatureStop
+Edit, TSplineBaseFeatureActivate
+Create Form, TSplineBaseFeatureCreationCommand
+Finish Mesh, MeshBaseFeatureStop
+Edit, MeshBaseFeatureActivate
+Create Mesh, MeshBaseFeatureCreationCommand
+Show In Location, ShowInLocationCmd
+Roll History Marker Here, FusionRollCommand
+Find in Timeline, FusionFindInTimeline
+Delete all features after History Marker, FusionTrimFeaturesCommand
+Expand Group, FusionExpandGroupFeatureCommand
+Create Group, FusionCreateGroupFeatureCommand
+Collapse Group, FusionCollapseGroupFeatureCommand
+Capture Position, SnapshotCmd
+Edit, SnapshotActivate
+Finish Position, SnapshotEditAccept
+Cancel Position, SnapshotEditCancel
+Revert Position, AsBuiltPositionsCmd
+Suppress Features, FusionSuppressCommand
+Unsuppress Features, FusionUnsuppressCommand
+Insert Fastener, FusionFastenersCommand
+Auto Update Size, FastenersStackUpdateCmd
+Auto Update All Sizes, FastenersAllStacksUpdateCmd
+Insert Similar Fastener, FastenersInsertSimilar
+Edit Fastener, FastenersEditCommand
+Replace Fastener, FastenersReplaceCommand
+Resolve Fastener, ResolveFastenerCommand
+Joint Origin, JointOrigin
+Joint, JointAssembleCmdNew
+Tangent Relationship, TransitionalRelationshipCmd
+Rigid Group, RigidGroupCmd
+Edit Rigid Group, EditRigidGroupCmd
+Edit Joint, DcEditJointAssembleCmd
+Edit Rigid Group, DcEditRigidGroupCmd
+Edit Joint, EditJointAssembleCmd
+Edit Joint Origin, EditJointOriginCmd
+Edit Joint Origin, EditJointOriginR2Cmd
+As-Built Joint, JointAsBuiltCmd
+Edit Joint, DcEditJointAsBuiltCmd
+Edit Motion Limits, EditJointDOFLimitsCmd
+Lock Motion, LockJointDOFCmd
+Unlock Motion, UnlockJointDOFCmd
+Motion Link, FusionMotionRelationshipCommand
+Edit, EditMotionRelationshipCmd
+Edit Feature, DcEditMotionRelationshipCmd
+Edit Tangent Relationship, DcEditTransitionalRelationshipCmd
+Edit Tangent Relationship, EditTransitionalRelationshipCmd
+Align Test, AlignTestCmd
+Fluid Volume, EnclosureCommand
+Edit Feature, DcEnclosureEditCommand
+Select By Boundary, SelectByBoundaryCommand
+Mirror, MirrorCommand
+Circular Pattern, PatternCircular
+Edit Circular Pattern, FusionDcCircularPatternEditCommand
+Edit Circular Pattern, PatternCircularEdit
+Pattern on Path, PatternOnPath
+Edit Pattern on Path, FusionDcPathPatternEditCommand
+Edit Pattern on Path, PatternOnPathEdit
+Rectangular Pattern, PatternRectangular
+Edit Rectangular Pattern, FusionDcRectangularPatternEditCommand
+Edit Rectangular Pattern, PatternRectangularEdit
+Geometric Pattern, FusionPatternGeometricCommand
+Edit Complex Pattern, PatternComplexEdit
+Edit Feature, FusionDcComplexPatternEditCommand
+Edit Feature, FusionDcMirrorPatternEditCommand
+Edit Feature, FusionDcDraftEditCommand
+Arrange, ArrangeCommand
+EDIT QUANTITY, ArrangeInputQuantityValueCommand
+Edit Arrange, DcArrangeEditCommand
+Edit Arrange, DcAdvandedArrangeEditCommand
+Edit Sketch Area, DcArrangeEditSketchCommand
+Bounding Solid, StockModelCommand
+Edit Bounding Solid, DcStockModelEditCommand
+Edit Feature, FusionEditFeatureCommand
+Edit Feature, FusionEditDcFeatureCommand
+Edit Profile Sketch, FusionEditDcFeatureProfileCommand
+Fit Point Spline, DrawSpline
+Spline Degree, DrawCVSpline
+Control Point Spline, DrawCVMSpline3D
+Control Point Spline, DrawCVMSpline5D
+Degree 3, DrawCVSpline3D
+Degree 5, DrawCVSpline5D
+SketchPanel, FusionShowSketchPanelCmd
+Center Diameter Circle, CircleCenterRadius
+2-Point Circle, CircleTwoPoint
+3-Point Circle, CircleThreePoint
+2-Tangent Circle, CircleTanTanRadius
+3-Tangent Circle, CircleThreeTangent
+Ellipse, CircleElipse
+Rectangle, DrawRectangle
+Circle, DrawCircle
+Polygon, DrawPolygon
+Arc, DrawArc
+Slot, DrawSlot
+2-Point Rectangle, ShapeRectangleTwoPoint
+3-Point Rectangle, ShapeRectangleThreePoint
+Center Rectangle, ShapeRectangleCenter
+3-Point Arc, ArcThreePoint
+Center Point Arc, ArcCenterTwoPoint
+Tangent Arc, ArcTangent
+Point, DrawPoint
+Edge Polygon, ShapePolygonEdge
+Inscribed Polygon, ShapePolygonInscribed
+Circumscribed Polygon, ShapePolygonCircumscribed
+Conic Curve, ConicCurveCmd
+Edit Conic Curve, EditConicCmd
+Three Point Arc Slot, ShapeArcSlotThreePoint
+Center Point Arc Slot, ShapeArcSlotCenterTwoPoint
+Center to Center Slot, ShapeSlotCenterToCenter
+Overall Slot, ShapeSlotOverall
+Center Point Slot, ShapeSlotCenterPoint
+Fillet, FilletSketchCmd
+Blend Curve, BlendG2CurveSketchCmd
+Blend Curve, BlendG1CurveSketchCmd
+Equal Distance Chamfer, ChamferSketchEqualDistance
+Two Distance Chamfer, ChamferSketchDistanceDistance
+Distance and Angle Chamfer, ChamferSketchDistanceAngle
+Chamfer, SketchChamfer
+Trim, TrimSketchCmd
+Break, BreakSketchCmd
+Sketch Scale, SketchScaleCmd
+Offset, Offset
+Drag offset, FusionOffsetDragCommand
+Drag offset dimension, FusionDragOffsetDimCommand
+Extend, ExtendSketchCmd
+Project To Surface, ProjectToSurface
+Include 3D Geometry, Include3DGeometry
+Mirror, MirrorSketchCommand
+Circular Pattern, CircularSketchPatternCommand
+Edit Circular Pattern, SketchPatternCircularEdit
+Edit Offset, OffsetSketchEdit
+Rectangular Pattern, RectangularSketchPatternCommand
+Edit Rectangular Pattern, SketchRectangularPatternEdit
+Fit Curves to Mesh Section, FitCurvesToSectionCommand
+Intersection Curve, IntersectionCurve
+Project, ProjectNewCmd
+Intersect, IntersectCmd
+Spun Profile, SpunProfileCmd
+Sketch Dimension, SketchDimension
+Edit Sketch Dimension, SketchEditDimensionCmdDef
+Drag Sketch Dimension, SketchDragDimension
+Add Offset Dimension, OffsetDimensionCmd
+Constraints, SketchGeomConstraintCmd
+Coincident, ConstraintCoincident
+Collinear, ConstraintCollinear
+Concentric, ConstraintConcentric
+MidPoint, ConstraintMidPoint
+Fix/UnFix, ConstraintFix
+Parallel, ConstraintParallel
+Perpendicular, ConstraintPerpendicular
+Horizontal/Vertical, ConstraintHorizontalVertical
+Tangent, ConstraintTangent
+Equal, ConstraintEqual
+Symmetry, ConstraintSymmetry
+Curvature, ConstraintSmooth
+Fix/UnFix, SketchFixConstraintCmd
+Move to sketch plane, SketchConstrainOnPlaneCmd
+Insert SVG, SketchImportSVG
+Save As DXF, SketchExportToDXFCommand
+Break Link, SketchUnProjectCmd
+Delete Coincident, DeleteCoincidentConstraintCmd
+Drag sketch, FusionDragSketchCommand
+Insert Spline Fit Point, SplineInsertPoint
+Change Spline Degree, ChangeSplineDegree
+Insert Spline Control Point, InsertControlPoint
+Display Control Frame, InsertControlPolygon
+Open/Close Spline Curve, SplineCloseCurve
+Show Profile, ShowProfile
+Hide Profile, HideProfile
+Show Dimension, ShowDimension
+Hide Dimension, HideDimension
+Show Dimensions, ShowDimensionWhenEditing
+Hide Dimensions, HideDimensionWhenEditing
+Show Constraints, ShowConstraints
+Hide Constraints, HideConstraints
+Show Sketch Points, ShowSketchPoints
+Hide Sketch Points, HideSketchPoints
+Enable fully constrained checking, EnableFullyConstrained
+Disable fully constrained checking, DisableFullyConstrained
+Toggle Radius, ToggleRadialDimCmd
+Toggle Diameter, ToggleDiameterDimCmd
+Toggle Driven, ToggleDrivenDimCmd
+Toggle Driving, ToggleDrivingDimCmd
+Show Projected Geometries, ShowProjectedGeometries
+Hide Projected Geometries, HideProjectedGeometries
+Show Construction Geometries, ShowConstructionGeometries
+Hide Construction Geometries, HideConstructionGeometries
+Show Grid, SketchGridOn
+Hide Grid, SketchGridOff
+Snap On, SketchSnapOn
+Snap Off, SketchSnapOff
+Slice Sketch, SliceSketchCommand
+Unslice Sketch, UnsliceSketchCommand
+Show Inactive Tangents, ShowInactive
+Text, TextCmd
+Text, MTextCmd
+Activate Text Snap Point, AddTextGrip
+Text on Path, TextOnPathCmd
+Edit Text, EditTextCmd
+Edit Text, EditMTextCmd
+Explode Text, ExplodeTextCmd
+Move sketch text, SketchMoveTextCmd
+Activate Tangent handle, AddTangentHandle
+Activate Curvature handle, AddCurvatureHandle
+Deactivate Tangent Handle, DeleteTangentCommand
+Deactivate Curvature Handle, DeleteCurvatureCommand
+Normal/Construction, SketchConstructionCmd
+Construction, SketchToggleConstructionCmd
+Normal/Centerline, SketchCenterLineCmd
+Centerline, SketchToggleCenterLineCmd
+Move, SketchMoveCmd
+Redefine Sketch Plane, SketchRedefineCommand
+Manage Lost Projections, SketchRelinkProjectionCmd
+Press Pull, FusionPressPullCommand
+Select By Size, FusionSelectBodiesBySizeCommand
+Seed And Boundary, FusionSelectSeedAndBoundaryFacesCommand
+Find Features, FusionFindFeaturesCommand
+Remove Faces, FusionRemoveFacesCommand
+Edit Remove Faces, FusionRemoveFacesEditCommand
+Remove Features, FusionRemoveFeaturesCommand
+Edit Remove Features, FusionRemoveFeaturesEditCommand
+Remove Details, FusionRemoveDetailsCommand
+Dissolve, DissolveFeatureCmdDef
+Dissolve Features, DissolveFeaturesCmdDef
+Edit Feature, DcReplaceWithPrimitiveEditCommand
+Replace with Primitives, ReplaceWithPrimitivesCommand
+Convert, TSpline2BRepCommand
+Check Conversion, ConversionAnalysisCommand
+Offset Plane, WorkPlaneOffsetFromPlaneCommand
+Edit Feature, FusionDcEditWorkPlaneByPlaneOffsetCommand
+Edit Feature, FusionDcEditWorkPlaneByLineAndAngleCommand
+Edit Feature, FusionDcEditWorkPlaneFromTwoPlanesCommand
+Edit Feature, FusionDcEditWorkPlaneFromTwoLinesCommand
+Edit Feature, FusionDcEditWorkPlaneTangentToCylinderCommand
+Edit Feature, FusionDcEditWorkPlaneTangentToFaceAtPointCommand
+Edit Feature, FusionDcEditWorkPlaneFromThreePointsCommand
+Edit Feature, FusionDcEditWorkPlaneAlongPathCommand
+Edit Feature, FusionDcEditWorkAxisThroughCylinderCommand
+Edit Feature, FusionDcEditWorkAxisFromLineCommand
+Edit Feature, FusionDcEditWorkAxisFromTwoPointsCommand
+Edit Feature, FusionDcEditWorkAxisFromTwoPlanesCommand
+Edit Feature, FusionDcEditWorkAxisNormalToFaceCommand
+Edit Feature, FusionDcEditWorkAxisFromPointAndFaceCommand
+Edit Feature, FusionDcEditWorkPointCommand
+Edit Feature, FusionDcEditWorkPointFromTwoLinesCommand
+Edit Feature, FusionDcEditWorkPointFromThreePlanesCommand
+Edit Feature, FusionDcEditWorkPointFromCircleOrSphereCommand
+Edit Feature, FusionDcEditWorkPointFromLineAndPlaneCommand
+Edit Feature, FusionDcEditWorkPointAlongPathCommand
+Plane at Angle, WorkPlaneFromLineAndAngleCommand
+Tangent Plane, WorkPlaneTangentToCylinderCommand
+Midplane, WorkPlaneFromTwoPlanesCommand
+Plane Through Two Edges, WorkPlaneFromTwoLinesCommand
+Plane Through Three Points, WorkPlaneFromThreePointsCommand
+Axis Through Cylinder/Cone/Torus, WorkAxisThroughCylinderCommand
+Axis Through Two Planes, WorkAxisFromTwoPlanesCommand
+Axis Through Two Points, WorkAxisFromTwoPointsCommand
+Axis Perpendicular at Point, WorkAxisNormalToFaceCommand
+Point Through Three Planes, WorkPointFromThreePlanesCommand
+Point Through Two Edges, WorkPointFromTwoLinesCommand
+Point at Vertex, WorkPointFromPointCommand
+Point at Center of Circle/Sphere/Torus, WorkPointFromCircleOrSphereCommand
+Point at Edge and Plane, WorkPointFromLineAndPlaneCommand
+Point Along Path, WorkPointAlongPathCommand
+Point from coordinates, WorkPointFromCoordsCommand
+Axis Through Edge, WorkAxisFromLineCommand
+Axis Perpendicular to Face at Point, WorkAxisFromPointAndFaceCommand
+Plane Tangent to Face at Point, WorkPlaneFromPointAndFaceCommand
+Plane from Point and Normal, WorkPlaneFromPointAndNormalCommand
+Plane Along Path, WorkPlaneAlongPathCommand
+Drag Work Axis Extent, FusionDragWorkAxisExtentCommand
+Drag Work Plane Extent, FusionDragWorkPlaneExtentCommand
+New Component, FusionCreateNewComponentCommand
+Create Components from Bodies, FusionCreateNewCompCmdFromBody
+New Component, FusionCreateNewCompCmdFromSel
+Edit Feature, FusionCreateComponentFromBodyEditCommand
+Export, FusionExportComponentCommand
+Save Copy As, FusionSaveAsComponentCommand
+Save Configured Design As, FusionSaveAsConfiguredDesignCommand
+Save Configuration As, FusionSaveAsConfigurationCommand
+Save Configuration As, FusionCDSaveAsConfigurationCommand
+Save As and Replace, FusionSaveAsAndReplaceComponentCommand
+Save As OBJ, FusionSaveAsOBJCommand
+Save Control Frame as OBJ, FusionSaveControlFrameAsOBJCommand
+Save T-Spline as IGA, TSplineSaveAsIGACommand
+Edit In Place, BeginEditInPlaceCmd
+Edit Context, BeginEIPAsEditContextCmd
+Activate Context, BeginEIPAsActivateContextCmd
+Sync Assembly Context, ContextUpdateFromParentCmd
+Sync All Assembly Contexts, ContextUpdateAllFromParentCmd
+Finish Edit In Place, EndEditInPlaceCmd
+Edit Context, EndEIPAsEditContextCmd
+Activate Context, EndEIPAsActivateContextCmd
+Activate Context, EIPContextActivateCmd
+Edit Context, EIPContextActivateAsEditCmd
+Finish Editing Context, EIPLocalContextActivateCmdDef
+Sync Assembly Context, EIPContextUpdateCmd
+Sync All Assembly Contexts, EIPContextsUpdateCmd
+Break Link, EIPContextBreakLinkCmd
+Break Link All, EIPContextBreakLinkAllCmdDef
+Non-associative, EIPNonAssociativeToggleCmd
+Associative, EIPAssociativeToggleCmd
+Reference Objects, ReferenceObjectsCmd
+Dissolve Broken Contexts, DissolveEIPContextCmd
+New Group, FusionCreateSurfaceGroupCommand
+New Sketch Group, FusionCreateSketchCustomGroupCommand
+Move to Group, FusionMoveToSurfaceGroupCommand
+Move to Group, FusionMoveToSketchCustomGroupCommand
+Paste New, FusionPasteNewCommand
+Make Independent, FusionMakeIndependentCommand
+Properties, FusionPropertiesCommand
+Opacity Control, OpacityControlCmd
+Custom Opacity, CustomOpacityControlCmd
+10%, OpacityCtrlTenCmd
+20%, OpacityCtrlTwentyCmd
+30%, OpacityCtrlThirtyCmd
+40%, OpacityCtrlFortyCmd
+50%, OpacityCtrlFiftyCmd
+60%, OpacityCtrlSixtyCmd
+70%, OpacityCtrlSeventyCmd
+80%, OpacityCtrlEightyCmd
+90%, OpacityCtrlNinetyCmd
+100%, OpacityCtrlHundredCmd
+Display Detail Control, TessellationControlCmd
+Dielectric Priority Control, DielectricPriorityControlCmd
+Background Canvas, FusionAddBackgroundCanvasCommand
+Canvas, FusionAddCanvasCommand
+Edit Feature, FusionDcEditCanvasCommand
+Edit Canvas, FusionEditCanvasCommand
+Calibrate, FusionCalibrateCanvasCommand
+Decal, FusionAddDecalCommand
+Decal, FusionAddEditDecalCommand
+Edit Feature, FusionDcEditDecalCommand
+Edit Decal, FusionEditDecalCommand
+Replace Image File, FusionReplaceDecalImageCommand
+Replace Canvas Image File, FusionReplaceCanvasImageCommand
+Display Component Colors, FusionViewColorCyclingToggleCmd
+Display Mesh Face Groups, FacegroupsToggleCmd
+Toggle Visibility, AnalysisVisibilityToggleCmd
+Curvature Comb Analysis, FusionCurvatureCombAnalysisCommand
+Edit, FusionEditCurvatureCombAnalysisCommand
+Toggle Curvature Display, FusionToggleSetupCurveCurvatureCombCommand
+Toggle Curvature Display, FusionToggleCurveCurvatureCombCommand
+Setup Curvature Display, FusionCurveCurvatureCombSetupCommand
+Zebra Analysis, FusionZebraAnalysisCommand
+Component Connection Analysis, FusionComponentConnectionAnalysisCommand
+Edit, FusionEditZebraAnalysisCommand
+Edit Component Connection Analysis, FusionEditComponentConnectionAnalysisCommand
+Component Connection Analysis Update, FusionComponentConnectionAnalysisUpdateCommand
+Draft Analysis, FusionDraftAnalysisCommand
+Edit, FusionEditDraftAnalysisCommand
+Curvature Map Analysis, FusionCurvatureMapAnalysisCommand
+Edit, FusionEditCurvatureMapAnalysisCommand
+Accessibility Analysis, FusionAccessibilityAnalysisCommand
+Edit, FusionEditAccessibilityAnalysisCommand
+Minimum Radius Analysis, FusionMinimumRadiusAnalysisCommand
+Edit, FusionEditMinimumRadiusAnalysisCommand
+Isocurve Analysis, FusionIsoCurveAnalysisCommand
+Edit, FusionEditIsoCurveAnalysisCommand
+Section Analysis, FusionHalfSectionViewCommand
+Edit, FusionEditHalfSectionViewCommand
+Center of Mass, FusionCenterOfMassCommand
+DOF Analysis, FusionDOFAnalysisCommand
+Edit, FusionEditCenterOfMassCommand
+Fastener Stacks Analysis, FusionFastenerStackAnalysisCommand
+Edit, FusionEditFastenerStackAnalysisCommand
+Open 3rdPartyCAD, OpenNonFusionCADFileCommand
+Open AddIn Supported File, OpenAddInSupportedFileCommand
+AddIn Supported File Command, AddInSupportedFileCommand
+Save As Mesh, FusionSaveAsSTLCommand
+Window Selection, selectWindow
+Freeform Selection, selectFreeForm
+Paint Selection, selectPaint
+Select Adjacent Faces, selectAdjacent
+Rename, FusionRenameTimelineEntryCommand
+Rename, RenameBrowserCmd
+Break Link, BreakXRefLinkCmd
+Choose Version, ChooseVersionCmd
+History, ShowHistoryCmd
+Get Latest Version, PLM360RefreshDocumentCommand
+Get Latest Updates, PLM360DeepRefreshDocumentCommand
+Get Latest Version, GetLatestCmd
+Get Latest Milestone Version, GetLatestMilestoneCmd
+Update External References, GetAllLatestCmd
+Get All Latest Versions, UpdateAllLatestCmd
+Invert Selection, SelectByInvertCommand
+Select All Occurrences, FusionSelectAllOccurrencesCommand
+Select Similar Occurrences, FusionSelectSimilarOccurrencesCommand
+Insert McMaster-Carr Component, InsertMcMasterCarrComponentCommand
+Insert DXF, ImportDxfFileCommand
+Read-Only For Me, EnableReadOnlyCmd
+Read-Only For Me, DisableReadOnlyCmd
+Select By Name, SelectByNameCommand
+Activate Working Model, ActivateWorkingModelAssetCommand
+New Working Model, CreateWorkingModelAssetCommand
+Update Clone, UpdateAssociativeCloneCommand
+Update Lightweight Clone, UpdateLightweightWorkingModel
+Break Link, BreakWorkingModelLinkCmd
+Insert Derive, PullDeriveCommand
+Open Source, OpenDeriveDocumentCommand
+Save As Latest, PLM360SaveAsLatestCommand
+Save As Latest, PLM360SaveAsLatestOnQATCommand
+Edit Derive Feature, EditDeriveCommand
+Derive, PushDeriveCommand
+Edit Derived Design, EditDeriveSourceCommand
+Break Link, BreakExternalDeriveLinkCmd
+Open, OpenCommand
+Show Insert Design, ShowInsertDialogCommand
+Auto Constrain, SketchAutoConstrainCmd
+Hide Insert Design, HideInsertDialogCommand
+Insert Design, InsertDialogCommand
+Replace Component, FusionComponentReplaceCommand
+Switch Configuration, FusionComponentChangeConfigCommand
+Edit Feature, APIFeatureEditCommand
+Test QML Command Dialog, TestQmlCommandDialogCommand
+Install Add-In, InstallAppAddInCommand
+Add Snap, DcJointSnapCmd
+Edit Snap, DcEditJointSnapCmd
+Delete Snap, DeleteJointSnapCmd
+Insert T-Spline, TSplineImportCommand
+Edit Form, TSplineEditCommand
+Extrude, TSplineExtrudeCommand
+Revolve, TSplineRevolveCommand
+Sweep, TSplineSweepCommand
+Insert Edge, TSplineInsertEdgeCommand
+Slide Edge, TSplineSlideEdgeCommand
+Bevel Edge, TSplineBevelEdgeCommand
+Insert Point, TSplineInsertPointCommand
+Thicken, TSplineThickenCommand
+Weld Vertices, TSplineWeldCommand
+UnWeld Edges, TSplineUnWeldCommand
+Plane, TSplinePrimitivePlaneCommand
+Box, TSplinePrimitiveBoxCommand
+Cylinder, TSplinePrimitiveCylinderCommand
+Sphere, TSplinePrimitiveSphereCommand
+Quadball, TSplinePrimitiveQuadBallCommand
+Torus, TSplinePrimitiveTorusCommand
+Mirror - Internal, TSplineInternalMirrorSymmetryCmd
+Circular - Internal, TSplineInternalCircularSymmetryCmd
+Mirror - Duplicate, TSplineReflectionMirrorSymmetryCmd
+Circular - Duplicate, TSplineReflectionCircularSymmetryCmd
+Clear Symmetry, TSplineClearSymmetryCommand
+Face, TSplineAppendFaceCommand
+Display Mode, TSplineToggleTessModeCmd
+Enable Better Performance, TSplineCapSettingCommand
+Fill Hole, TSplineFillHoleCmd
+Erase And Fill, TSplineEraseAndFillCmd
+Subdivide, TSplineSubsetCmd
+Smooth, TSplineSmoothCmd
+Cylindrify, TSplineCylindrifyCmd
+Make Uniform, TSplineMakeUniformCmd
+Crease, TSplineCreasedEdgeCommand
+UnCrease, TSplineUnCreaseEdgeCmd
+Bridge, TSplineBridgeSubDCmd
+Merge Edge, TSplineMergeEdgeCmd
+Flatten, TSplineFlattenSubDCmd
+Straighten, TSplineStraightenCmd
+Edit By Curve, TSplineEditByCurveCmd
+Pull, TSplinePullSubDCmd
+Interpolate, TSplineInterpolateSubDCmd
+Repair Body, TSplineRepairBodyCmd
+Match, TSplineMatchCmd
+Edit Match, TSplineMatchEditCmd
+Pipe, TSplinePrimitivePipe
+Edit Pipe, TSplinePipeEditCommand
+Isolate Symmetry, TSplineIsolateSymmetryCmd
+T-Spline Entity Info, TSplineDumpEntityCommand
+Save *.tsm file, TSplineSaveAsTSMCommand
+Save *.tss file, TSplineSaveCurvesAsTSSCommand
+T-Spline Diagnostics, TSplineDiagnosticCommand
+Assembly Info, AssemblyInfoCommand
+Freeze, TSplineFreezeCmd
+UnFreeze, TSplineUnFreezeCmd
+Activate Simulation Model, ActivateWorkingModelCommand
+Activate Generative Model, ActivateGenWorkingModelCommand
+Copy Working Model, CopyWorkingModelCommand
+Delete Working Model, DeleteWorkingModelCommand
+Copy Working Model, activate it and import gemetry, CopyWorkingModelAndImportCommand
+Extract TSpline from Surface Body, ExtractTSSurfaceBodyCommand
+Convert Surface Body to TSpline, ConvertSurfaceBody2TSCommand
+Finish Simplify, FinishSimplifyCommand
+Finish Edit Model, FinishEditModelCommand
+Delete, FusionDeleteOverrideCommand
+Remove All Except Selected, SoftDeleteAllUnselectedCommand
+Simulate in CFD, FusionSimulateInCFDCommand
+CFD Model Assessment Tool, FusionCFDModelAssessmentToolCommand
+Simulate in CFD, FusionSimulateInCFD2020Command
+CFD Model Assessment Tool, FusionCFD2020ModelAssessmentToolCommand
+Simulate in CFD, FusionSimulateInCFD2021Command
+CFD Model Assessment Tool, FusionCFD2021ModelAssessmentToolCommand
+Simulate in CFD, FusionSimulateInCFD2023Command
+CFD Model Assessment Tool, FusionCFD2023ModelAssessmentToolCommand
+Simulate in CFD, FusionSimulateInCFD2024Command
+CFD Model Assessment Tool, FusionCFD2024ModelAssessmentToolCommand
+Simulate in Moldflow Adviser, FusionSimulateInMoldflowAdviserCommand
+Simulate in Moldflow Insight, FusionSimulateInMoldflowInsightCommand
+Sheet Metal Rules, FusionSheetMetalRulesCommand
+Flange, FusionSheetMetalFlangeCommand
+Edit Feature, FusionBaseFaceEditCommand
+Bend, SheetMetalBendCmd
+Edit Feature, SheetMetalBendEditCmd
+Convert to Sheet Metal, ConvertToSheetMetalCmd
+Convert to Sheet Metal, DMConvertToSheetMetalCmd
+Edit Feature, ConvertToSheetMetalEditCmd
+Switch Sheet Metal Rule, ChangeSheetMetalDataCommand
+Unfold, FusionSheetmetalUnfoldCommand
+Edit Feature, SheetmetalEditUnfoldCommand
+Refold, FusionSheetmetalRefoldCommand
+Create Flat Pattern, FusionSheetMetalFlatPatternCmd
+Finish Flat Pattern, FusionSheetMetalExitFlatPatternCmd
+Update Flat Pattern, UpdateFlatPatternCommand
+Update Flat Pattern, UpdateFlatPatternFromMainDesignCommand
+Update All Flat Patterns, UpdateAllFlatPatternsCommand
+Activate, FusionSheetMetalFlatPatternActivateCmd
+Export Flat Pattern as DXF, FlatPatternDXFExportCmd
+Rip, FusionSheetMetalRipCommand
+Edit Feature, SheetMetalRipEditCmd
+Patch, FusionSurfacePatchCommand
+Edit Feature, FusionSurfacePatchEditCommand
+Edit Feature, FusionDcSurfaceOffsetEditCommand
+Edit Feature, FusionDcSurfaceOffsetShellEditCommand
+Edit Feature, FusionDcMidSurfaceEditCommand
+Edit Feature, FusionDcSurfaceShellEditCommand
+Edit Feature, FusionDcSurfaceDeleteFaceEditCommand
+Edit Feature, FusionDcReverseNormalEdit
+Edit Feature, FusionDcSurfaceTrimEditCommand
+Merge, FusionSurfaceMergeCommand
+Delete Faces, FusionSurfaceDeleteFacesCommand
+Reverse Normal, FusionSurfaceReverseNormalCommand
+Trim, FusionSurfaceTrimCommand
+Stitch, FusionSurfaceStitchCommand
+Edit Feature, FusionSurfaceStitchEditCommand
+Unstitch, FusionSurfaceUnStitchCommand
+Edit Feature, FusionSurfaceUnStitchEditCommand
+Offset, FusionSurfaceOffsetCommand
+Ruled, FusionSurfaceRuledCommand
+Edit Feature, FusionDcSurfaceRuledEditCommand
+Untrim, FusionSurfaceUntrimCommand
+Edit Feature, FusionDcSurfaceUntrimEditCommand
+Midsurface Shell, FusionSurfaceMidsurfaceShellCommand
+Offset Shell, FusionSurfaceOffsetShellCommand
+Shell from Surface, SurfaceShellConvertCommand
+Edit Midsurface Shell, FusionSurfaceMidsurfaceShellEditCommand
+Edit Surface Shell, FusionSurfaceShellEditCommand
+Revolve, SurfaceRevolve
+Sweep, SurfaceSweep
+Validate, FusionSurfaceValidateCommand
+Transparent Surfaces Toggle, FusionSurfaceTransparencyCommand
+Toggle Surface Body Transparency, FusionSurfaceSelectionTransparencyCommand
+PCB Profile, PCBDefineBoardCmd
+Copy EAGLE Profile, PCBImprintCmd
+Edit, PCBActivate
+Finish PCB, PCBStop
+Create Independent PCB, PCBCreateCmd
+Create Associative PCB, PCBDeriveCmd
+Create PCB, PCBWorkspaceCmd
+PCB Status, PCBStatusCmd
+Move PCB Components, PCBMoveComponentsCmd
+Flip Component, PCBFlipComponentCmd
+New 3D PCB, PCBNewDocumentCmd
+Replace Component Body, PCBReplaceComponentCmd
+Update PCB Component, PCBUpdateComponentCmd
+Move PCB Component body, PCBMoveComponentBodyCmd
+Edit EAGLE Profile, PCBBoardSketchEditCmd
+Flip 3D PCB Component, PCB3DFlipComponentCmd
+Move 3D PCB Component, PCB3DMoveComponentsCmd
+Update 3D PCB, PCBDocumentUpdateCmd
+Edit Board, PCBEditBoardCmd
+Edit Sketch, PCB3DBoardOutlineEditCommand
+PCBHole, PCBHoleCmd
+Edit Feature, PCBDcHoleEditCommand
+Push to 2D PCB, PCBExportIdfCmd
+Create PCB Sketch, PCBSketchCreationCmd
+Boss, FusionBossCommand
+Snap Fit, FusionSnapFitCommand
+Rest, FusionRestCommand
+Lip, FusionLipCommand
+Edit Feature, DcBossEdit
+Edit Feature, DcSnapFitEdit
+Edit Feature, DcRestEdit
+Edit Feature, DcLipEdit
+Manage Plastic Rules, FusionManagePlasticRuleCommand
+Assign Plastic Rule, FusionAssignPlasticRuleCommand
+Assign Plastic Rule, FusionSwitchPlasticRuleCommand
+Remove Plastic Rule, FusionRemovePlasticRuleCommand
+Design Advice, DesignAdviceCmd
+Properties, SimPropertiesCommand
+Activate object, SimActivateCmd
+Edit object via doubleclick, SimDoubleClickCmdDef
+Edit object, SimEditCmd
+Change Unit Set, SimUnitsSettingsCommand
+Show/Hide, SimVisibilityToggleCmd
+Unsuppress All Children, SimUnsuppressAllCommand
+Toggle Learning Panel, ToggleLearningPanelCmd
+New Simulation Study, SimCreateSimCaseCommand
+New Generative Study, SimCreateGenCaseCmd
+New Generative Study, SimCreateGenCaseFluidsCmd
+New Simulation Study From Generative Design, SimCreateSimCaseFromGenerativeDesignCommand
+Explore Generative Results, ExploreCommand
+Explore Generative Results, ExploreFluidsCommand
+Thumbnail View, ExploreDisplayThumbnailViewCmd
+Properties View, ExploreDisplayPropertiesViewCmd
+Scatter Plot View, ExploreDisplayScatterPlotViewCmd
+Table View, ExploreDisplayTableViewCmd
+Model View, ExploreOutcomeProfileDisplayModelViewCmd
+Model View, ExploreOutcomeProfileDisplayModelViewFluidsCmd
+Transparent View, ExploreOutcomeProfileDisplayTransparentViewCmd
+Transparent View, ExploreOutcomeProfileDisplayTransparentViewFluidsCmd
+Stress View, ExploreOutcomeProfileDisplayStressViewCmd
+Pressure View, ExploreOutcomeProfileDisplayStressViewFluidsCmd
+Flow Line View, ExploreOutcomeProfileDisplayFlowLineViewFluidsCmd
+Design Preview, ExploreOutcomeProfileDisplayExportPreviewCmd
+Design Preview, ExploreOutcomeProfileDisplayExportPreviewFluidsCmd
+Preserve Geometry View, ExploreOutcomeProfileDisplayPreserveViewCmd
+Preserve Geometry View, ExploreOutcomeProfileDisplayPreserveViewFluidsCmd
+Obstacle Geometry View, ExploreOutcomeProfileDisplayObstacleViewCmd
+Obstacle Geometry View, ExploreOutcomeProfileDisplayObstacleViewFluidsCmd
+Starting Shape View, ExploreOutcomeProfileDisplayStartingShapeViewCmd
+Starting Shape View, ExploreOutcomeProfileDisplayStartingShapeViewFluidsCmd
+Compare, ExploreOutcomeProfileCompareCmd
+Compare, ExploreOutcomeProfileCompareFluidsCmd
+Compare, ExploreOutcomeProfileCompareAddEnabledCmd
+Compare, ExploreOutcomeProfileCompareAddDisabledCmd
+Design from Outcome, ExploreOutcomeProfileExportSmtCmd
+Design from Outcome, ExploreOutcomeProfileExportSmtFluidsCmd
+Mesh Design from Outcome, ExploreOutcomeProfileExportStlCmd
+Mesh Design from Outcome, ExploreOutcomeProfileExportStlFluidsCmd
+Add to Favorites, ExploreFavoritesCmd
+Add Label, ExploreLabelsCmd
+Export CSV, ExploreSaveCSVCmd
+Finish Explore, FinishExploreCmd
+Finish Outcome View, FinishOutcomeViewCmd
+Finish Results, FinishHawkeyeCmd
+Finish Results, FinishDoraCmd
+Activate Study, SimActivateSimCaseCommand
+Expand active simulation Study, SimExpandActiveSimCaseCommand
+Activate Load Case, SimActivateSimLoadCaseCmd
+New Load Case, SimCreateSimLoadCaseCmd
+Clone Load Case, SimDuplicateSimLoadCaseCmd
+Clone Study, SimCopySimCaseCommand
+Clone Study, SimCopyGenCaseCommand
+Settings, SimCasePropertiesCmd
+Study Settings, GenCasePropertiesCmd
+Delete Study, SimDeleteSimCaseCommand
+Mesh Settings, SimMeshSettingsCmd
+Solve Settings, SimSolveSettingsCmd
+Adaptive Mesh Refinement, SimConvergenceSettingsCmd
+Contact Settings, SimContactsSettingsCmd
+Enable, SimAutoSolverContactsEnableCmd
+Disable, SimAutoSolverContactsDisableCmd
+Study Materials, SimOverrideMaterialCommand
+Material Properties, SimMaterialPropertiesCommand
+Manage Physical Materials, SimMaterialEditCommand
+Manage Physical Materials, GenMaterialEditCommand
+Update Material, SimUpdateMaterialCommand
+Update Simulation Study, SimUpdateCommand
+Update simulation study results from cloud storage., SimReconnectJobOrganizerCommand
+DOF View, SimDisplayDOFViewCommand
+Groups View, SimDisplayGroupsViewCommand
+Model View, SimDisplayNormalViewCommand
+Isolate, SimIsolateCommand
+Unisolate, SimUnisolateCommand
+Unisolate All, SimUnisolateAllCommand
+Switch to Fusion Model, SwitchToFusionCommand
+Isolate, SimIsolateBodyCommand
+Unisolate, SimUnisolateBodyCommand
+Hide, SimHideCommand
+Show, SimShowCommand
+Transparent Surfaces Toggle, SimSurfaceTransparencyCmd
+Show/Hide, ShowHideBodyCmd
+Show All Components, SimVisibilityAllCommand
+Show All Components, SimShowAllComponentsCommand
+Show All Bodies, SimShowAllBodiesCommand
+View Results, SimSwitchToPostProcessingCommand
+Mesh View, SimSwitchToPreviewMeshCommand
+DOF Colors, SimDofColorsCmd
+Job Status, SimShowJobsDlgCmd
+Job Status, GenShowJobsDlgCmd
+Delete, SimDeleteCommonCommand
+Remove, SimRemoveRigidBodyTargetCommand
+Copy, SimCopyCommonCommand
+Suppress, SimSuppressCommonCommand
+Unsuppress, SimUnsuppressCommonCommand
+Convergence Plot, SimConvergencePlotCmd
+Report, SimReportCmd
+Measure, SimMeasureCommand
+Compare, SimActivateCompareCmd
+Synchronize Camera, SimSyncCameraCmd
+Select By Size, SimSelectBodiesBySizeCommand
+Invert Selection, SimSelectByInvertCommand
+Select By Boundary, SimSelectByBoundaryCommand
+Select All Occurrences, SimSelectAllOccurrencesCommand
+Select Similar Occurrences, SimSelectSimilarOccurrencesCommand
+Select By Name, SimSelectByNameCommand
+Switch and check Interference, SimSwitchToFusionAndRunInterferencesCommand
+Alert, SimAttributesAlertCommand
+Send Study to Ansys® Mechanical™, SimExportToMechanicalCommand
+Send Study to Ansys® Discovery™, SimExportToDiscoveryCommand
+Export Study to Ansys® Setup, SimExportToScalarisCommand
+Solve Details, SimSolveDetailsCmd
+Generate Details, GenGenerateDetailsCmd
+Hide Generate Details, GenHideGenerateDetailsCmd
+Cloud Credit Info, SimCloudCreditInfoCommand
+Cloud Credit Info, SimGenCloudCreditInfoCommand
+Performance and manufacturing process insights, Sim7DayTrialInfoCommand
+Enable Preview Study, SimEnablePreviewStudyCommand
+Display Study Material Colors, SimSuppressAppearanceCommand
+Compare, CompareCommand
+Two Horizontal Views, Layout2HCommand
+Two Vertical Views, Layout2VCommand
+One Vertical and Two Horizontal Views, Layout1V2HCommand
+One Horizontal and Two Vertical Views, Layout1H2VCommand
+Four Views, Layout2x2Command
+One Horizontal and Three Vertical Views, Layout1H3VCommand
+One Vertical and Three Horizontal Views, Layout1V3HCommand
+Synchronize Cameras, CameraSyncCommand
+Synchronize Result Types, ResultSyncCommand
+Synchronize Legends, LegendSyncCommand
+Synchronize Animations, AnimationSyncCommand
+Finish Compare, FinishCompareCmd
+Surface Probes, SurfaceProbesCommand
+Point Probes, PointProbesCommand
+Show All Probes, ShowAllProbesCommand
+Hide All Probes, HideAllProbesCommand
+Delete All Probes, DeleteAllProbesCommand
+Cutting Planes, CuttingPlaneCommand
+Guided Results, GuidedResultsCommand
+Results, ResultsBrowserCommand
+Undo, DoraUndoCommand
+Redo, DoraRedoCommand
+Learn more, SimMissingEntitlementCommand
+Solver Data, SimSolveLogCmd
+Legend Min/Max, SimEditResultsLegendCmd
+Legend Options, SimResultLegendOptionsCmd
+Legend Options, SimResultLegendOptionsHotspotCmd
+2D Chart, SimResultLegendCallChart1Cmd
+2D Chart, SimResultLegendCallChart2Cmd
+2D Chart, SimResultLegendCallChart3Cmd
+Show result legend, SimResultsLegendShowCmd
+Hide result legend, SimResultsLegendHideCmd
+Reset, SimResultsLegendMinRefValueResetCmd
+Reset, SimResultsLegendMaxRefValueResetCmd
+Result Type, SimResultTypeCmd
+Result Type Group, SimResultTypeGroupCmd
+Result Units, SimResultUnitsCmd
+Node Average, SimResultNodeAverageCmd
+Activate Load Case, SimLoadCaseCmd
+Result Frequency, SimDomainPoint1Cmd
+Result Configuration, SimDomainPoint2Cmd
+Result Configuration, SimDomainPoint3Cmd
+Result Configuration, SimDomainPointInterpolable1Cmd
+Result Configuration, SimDomainPointInterpolable2Cmd
+Result Configuration, SimDomainPointInterpolable3Cmd
+Results Details, SimResultsRecommendationsCmd
+Automatically Show, SimResultsRecommendationsAutomaticallyShowCmd
+Show design, SimResultRecommendationsShowDesignCmd
+Edit Safety Factors, SimResultRecommendationsEditSafetyFactorCmd
+Adjust Deformation Scale, SimResultRecommendationsDeformationScaleCmdDefKey
+Legend Size/Shape, SimResultsLegendConfigurationCmd
+Synchronize Min/Max, SimSyncRefValuesCmd
+Synchronize Result Type, SimSyncResultTypeCmd
+Contours, SimContourLinesCmd
+Active Study View, ActiveSimCaseCommand
+Toggle Mesh Visibility, SimToggleMeshCmd
+Toggle Wireframe Visibility, SimToggleWireframeCmd
+Undeformed, SimDisplacementScaleNoneCmd
+Actual, SimDisplacementScaleActualCmd
+Adjusted 0.5x, SimDisplacementScaleSmallCmd
+Adjusted, SimDisplacementScaleNormalCmd
+Adjusted 2x, SimDisplacementScaleLargeCmd
+Adjusted 5x, SimDisplacementScaleLargestCmd
+Show Min/Max, SimMinMaxProbesCmd
+Create Surface Probes, SimSurfaceProbesCmd
+Show All Probes, SimShowAllProbesCmd
+Hide All Probes, SimHideAllProbesCmd
+Delete All Probes, SimDeleteAllProbesCmd
+Point Probe, SimPointProbeCmd
+Edit Point Probe, SimEditPointProbeCmd
+Point Probe, SimPointProbeStartCreationCmd
+Create Point Probe, SimPointProbeCreateCmd
+Properties, SimProbePropertiesCommand
+Probe Selection, SimPointProbeSelectionCmd
+Probe Drag, SimProbeDragCommand
+Animate, SimAnimateCommand
+Slice Plane, SimClippingPlaneStartCreationCmd
+Edit Slice Plane, SimClippingPlaneEditCmd
+Create Slice Plane, SimClippingPlaneCreateCmd
+Two Horizontal Views, SimLayout2HCmd
+Two Vertical Views, SimLayout2VCmd
+One Vertical and Two Horizontal Views, SimLayout1V2HCmd
+One Horizontal and Two Vertical Views, SimLayout1H2VCmd
+Four Views, SimLayout2x2Cmd
+One Horizontal and Three Vertical Views, SimLayout1H3VCmd
+One Vertical and Three Horizontal Views, SimLayout1V3HCmd
+2D Time Plot, SimTransResult2DPlotCmd
+Finish Compare, SimFinishCompareCmd
+Promote, SimPromoteCmd
+Finish Results, FinishResultsCmd
+Simulation Results, SimResultsCmd
+Activate, SimActivateSimCaseForWorkingModelCommand
+Delete Simulation Model, DeleteSimulationModelWithSimCasesCommand
+Delete Generative Model, DeleteGenerativeModelWithSimCasesCommand
+Clone Simulation Model, CopyWorkingModelWithSimCasesCommand
+Clone Generative Model, CopyGenWorkingModelWithSimCasesCommand
+Delete, DeleteSelectionGroupCmd
+Simplify, SwitchToSimplifyCommand
+Edit Model, EditModelCommand
+Edit Model, EditModelFluidsCommand
+New Simulation Model, CreateSimulationModelCommand
+New Generative Model, CreateGenerativeModelCommand
+Activate Config, SimActivateConfigRowCommand
+Copy Study, GenCopyStudyCommand
+Copy Study, SimCopyStudyCommand
+Force, SimForceLoadCommand
+Moment, SimMomentLoadCommand
+Pressure, SimPressureLoadCommand
+Bearing Load, SimBearingLoadCommand
+Remote Force, SimRemoteForceLoadCommand
+Structural Loads, SimLoadsCommand
+Structural Loads, GenLoadsCommand
+Edit Gravity, SimGravityCommand
+Edit Gravity, GenGravityCommand
+Angular Global Load, SimAngularBodyLoadCommand
+Angular Global Load, GenAngularBodyLoadCommand
+Linear Global Load, SimLinearBodyLoadCommand
+Linear Global Load, GenLinearBodyLoadCommand
+Toggle Gravity On, SimGravityActivateCommand
+Toggle Gravity Off, SimGravityDeactivateCommand
+Structural Constraints, SimNewConstraintCmd
+Structural Constraints, SimNewConstraintExplicitQuasiStaticCmd
+Structural Constraints, GenNewConstraintCmd
+Fixed, SimConstraintFixedCmd
+Pin, SimConstraintPinnedCmd
+Frictionless, SimConstraintFrictionlessCmd
+Prescribed Displacement, SimConstraintPrescribedDisplacementCmd
+Flow rate, SimFlowRateCommand
+Flow Velocity, SimFlowVelocityCommand
+Remote Moment, SimRemoteMomentLoadCommand
+Flow Sources, GenFluidFlowSourceCommand
+Edit Flow Sources, GenEditFluidFlowSourceCommand
+Flow Openings, GenFluidFlowOpeningCommand
+Fluid Pressures, GenFluidFlowPressureCommand
+Edit Fluid Pressures, GenEditFluidFlowPressureCommand
+Point Mass (Auto), SimAutoPointMassCommand
+Edit Point Mass, SimEditAutoPointMassCommand
+Point Mass (Manual), SimManualPointMassCommand
+Edit Point Mass, SimEditManualPointMassCommand
+Point Mass (Manual), GenManualPointMassCommand
+Edit Point Mass (Manual), GenEditManualPointMassCommand
+Edit Structural Load, SimEditLoadsCommand
+Edit Structural Load, GenEditLoadsCommand
+Edit Structural Constraint, SimEditConstraintCmd
+Edit Structural Constraint, GenEditConstraintCmd
+Edit Angular Global Load, SimEditAngularBodyLoadCommand
+Edit Angular Load, GenEditAngularBodyLoadCommand
+Edit Linear Global Load, SimEditLinearBodyLoadCommand
+Edit Linear Global Load, GenEditLinearBodyLoadCommand
+Transient Loads, SimTransientLoadsCommand
+Transient Loads, SimTransientLoadsExplicitDynamicCommand
+Transient Loads, SimTransientLoadsExplicitQuasiStaticCommand
+Edit Transient Structural Load, SimTransientEditLoadsCommand
+Transient Force, SimTransientForceLoadCommand
+Transient Pressure, SimTransientPressureLoadCommand
+Transient Moment, SimTransientMomentLoadCommand
+Transient Angular Global Load, SimTransientAngularBodyLoadCommand
+Edit Angular Global Load, SimTransientEditAngularBodyLoadCommand
+Transient Linear Global Load, SimTransientLinearBodyLoadCommand
+Edit Linear Global Load, SimTransientEditLinearBodyLoadCommand
+Base Excitation, SimTransientBaseExcitationCmd
+Edit Base Excitation, SimTransientEditBaseExcitationCmd
+Prescribed Translation, SimTransientPrescribedConstraintCmd
+Prescribed Translation, SimTransientPrescribedConstraintExplicitQuasiStaticCmd
+Edit Prescribed Translation, SimTransientEditPrescribedConstraintCmd
+Edit Prescribed Translation, SimTransientEditPrescribedConstraintExplicitQuasiStaticCmd
+Prescribed Rotation, SimTransientPrescribedRotationCmd
+Prescribed Rotation, SimTransientPrescribedRotationExplicitQuasiStaticCmd
+Edit Prescribed Rotation, SimTransientEditPrescribedRotationCmd
+Edit Prescribed Rotation, SimTransientEditPrescribedRotationExplicitQuasiStaticCmd
+Transient Bearing, SimTransientBearingLoadCommand
+Transient Remote, SimTransientRemoteForceLoadCommand
+Initial Angular Velocity, SimTransientInitialAngularBodyLoadCommand
+Edit Initial Angular Global Load, SimTransientEditInitialAngularBodyLoadCommand
+Initial Linear Velocity, SimTransientInitialLinearBodyLoadCommand
+Edit Initial Linear Velocity, SimTransientEditInitialLinearBodyLoadCommand
+Initial Angular Velocity, SimExplicitInitialAngularBodyLoadCommand
+Edit Initial Angular Velocity, SimExplicitEditInitialAngularBodyLoadCommand
+Bolt Connector, SimConnectorBoltCommand
+Edit Bolt Connector, SimEditConnectorBoltCommand
+Rigid Body Connector, SimConnectorRigidBodyCommand
+Edit Rigid Body Connector, SimEditConnectorRigidBodyCommand
+Spring Connector, SimConnectorSpringCommand
+Edit Spring Connector, SimEditConnectorSpringCommand
+Preserve Region, SimNewPreserveBoundaryCmd
+Symmetry Plane, SimNewSymmetryPlaneCmd
+Target Body, SimTopologyTargetCommand
+Starting Shape, SimGenerativeSeedTargetCommand
+Fluid Starting Shape, SimGenerativeSeedTargetFluidsCommand
+Preserve Geometry, SimGenerativeKeepBoundaryCommand
+Fluid Preserve Geometry, SimGenerativeKeepBoundaryFluidsCommand
+Obstacle Geometry, SimGenerativeObstacleBoundaryCommand
+Solid Obstacle Geometry, SimGenerativeObstacleBoundaryFluidsCommand
+Edit Preserved Region, SimEditPreserveBoundaryCmd
+Edit Symmetry Plane, SimEditSymmetryPlaneCmd
+Symmetry Plane, SimGenerativeSymmetryPlanesBoundaryCommand
+Highlight invalid planes, SimGenerativeSymmetryPreservePlanesHighlightCommand
+Highlight invalid planes, SimGenerativeSymmetryTopologyPlanesHighlightCommand
+Highlight invalid planes, SimGenerativeSymmetryObstaclePlanesHighlightCommand
+Obstacle Offset, SimGenerativeObstacleOffsetCommand
+Solid Obstacle Offset, SimGenerativeObstacleOffsetFluidsCommand
+Edit Obstacle Offset, SimGenerativeEditObstacleOffsetCommand
+Highlight Obstacle Interferes Preserve., SimGenerativeObstacleInterferesPreserveHighlightCmd
+Rigid Bodies, SimEditRigidTargetCommand
+Rigid Bodies, SimRigidTargetCommand
+Load Case Attributes, SimShowAttributesCommand
+Load Case Attributes, GenShowAttributesCommand
+Fluid Attributes, GenFluidsShowAttributesCommand
+Thermal Loads, SimThermalLoadsCmd
+Edit Thermal Load, SimThermalLoadsEditCmd
+Heat Source, SimThermalLoadSurfaceHeatCmd
+Internal Heat, SimThermalLoadInternalHeatCmd
+Convection, SimThermalLoadConvectionCmd
+Radiation, SimThermalLoadEmissivityCmd
+Applied Temperature, SimThermalLoadTemperatureCmd
+Graph, SimThermalGraphCmd
+Pre-check, SimFEACSPreSolveCheckCmd
+Pre-check, GenFEACSPreSolveCheckCmd
+Data Check, SimFEACSDataCheckCmd
+Generate Mesh, SimFEACSMeshSolveCmd
+Generate Mesh, SimFEACSMeshCloudSolveCmd
+Local Solve, SimFEACSSolveCmd
+Export Nastran File, SimFEACSEditSolveCmd
+Cloud Solve, SimFEACSCloudSolveCmd
+Optimize Shape, SimFEACSTopologyOptimizationSolveCmd
+Synchronous Optimize Topology, SimFEACSTopologyOptimizationSynchronousSolveCmd
+Select Related Contacts, SimSelectRelatedContactsCommand
+Solve, SimSolveCmd
+Generate, GenSolveCmd
+Generate, GenSolveFluidsCmd
+Solve Automatic Contacts, SimFEACSSolveAutoContactsCmd
+Manual Contacts, SimManualContactCommand
+Automatic Contacts, SimFEACSAutoContactsCmd
+Edit Contact, SimEditContactCommand
+Flip Contact References, SimFlipContactRefsCommand
+Bonded, SimContactBondedCommand
+Separation, SimContactSeparationSlidingCommand
+Rough, SimContactSeparationNoSlidingCommand
+Sliding, SimContactSlidingNoSeparationCommand
+Offset Bonded, SimContactOffsetBondedCommand
+New Fatigue Case, SimCreateFatigueCaseCmd
+Settings, SimFatigueCaseSettingCmd
+Clone Fatigue Case, SimFatigueCaseCloneCmd
+Activate fatigue case, SimFatigueCaseActivateCmd
+Fatigue Materials, SimFatigueCaseOvMaterialCmd
+Fatigue Life Factors, SimFatigueCaseSurfaceFinishCmd
+Cycle History, SimFatigueCycleHistoryCmd
+Output Options, SimFatigueOutputOptCmd
+Fatigue Material Properties, SimFatigueMaterialViewCmd
+Calculation Options, SimFatigueCalcOptCmd
+Exclude Fatigue Parts, SimFatigueSuppressPartCmd
+Remove Input Study, SimFatigueDeleteLinkedStudyCmd
+Edit Input Studies, SimFatigueEditLinkedStudiesCmd
+Update Material, SimFatigueUpdateMaterialCmd
+Show Meshing Issues, SimShowMeshingIssuesCmd
+Hide Meshing Issues, SimHideMeshingIssuesCmd
+Center of Mass, SimFEACSCenterOfMassCmd
+Reactions, SimFEACSReactionForceCmd
+Local Mesh Control, SimMeshRefinementByEntitiesCmd
+Edit Local Mesh Control, SimEditMeshRefinementByEntitiesCmd
+Shape Optimization Criteria, SimOptimizationSetupCommand
+Edit Shape Optimization Settings, SimOptimizationSetupEditCommand
+Manage Contacts, SimContactsManagerCmd
+ProgressBarUpdate, SimProgressBarUpdateCmdDef
+Objectives, SimGenerativeObjectivesCommand
+Objectives, SimGenerativeObjectivesFluidsCommand
+Edit Objectives, SimEditGenerativeObjectivesCommand
+Manufacturing, SimGenerativeManufacturingCommand
+Previewer, SimGenerativePreviewCmd
+Contact Pairs, SimGlobalAnalysisSpecificContactsCommand
+Element Deletion Criteria, SimExplicitElementDeletionCommand
+Edit Element Deletion Criteria, SimEditExplicitElementDeletionCommand
+Thermal Loads, SimFDThermalLoadAttributeCommand
+Edit Thermal Load, SimFDEditInternalHeatAttributeCommand
+Heat Sink, SimHeatSinkAttributeCommand
+Edit Heat Sink, SimEditHeatSinkAttributeCommand
+Fan, SimFanAttributeCommand
+Edit Fan, SimEditFanAttributeCommand
+Temperature Thresholds, SimCriticalTemperaturesCommand
+Edit Temperature Thresholds, SimEditCriticalTemperaturesCommand
+Risk Scale, SimFDRiskScaleCommand
+Section, SimFDSectionModeCommand
+Temperature Scale, SimFDTemperatureScaleCommand
+Ambient Temperature, SimAmbientTemperatureCommand
+Edit Ambient Temperature, SimEditAmbientTemperatureCommand
+Simulation Results, SimFECWebViewerCmd
+Guided Results, SimFECGuidedResultsCmd
+Results, SimFECResultsBrowserCmd
+Surface Probes, SimFECSurfaceProbesCmd
+Point Probes, SimFECPointProbesCmd
+Cutting Planes, SimFECCuttingPlaneCmd
+Study Materials, StudyMaterialsCommand
+Study Materials (Libraries), MaterialLibraryCommand
+Material Cancel, MaterialCancelCommand
+Material Properties, MaterialPropertiesCommand
+Study Materials, MaterialLibrarySwitchCommand
+Injection Locations, InjectionPointCommand
+Edit Injection Location, InjectionPointEditCommand
+View Results, ViewResultsCommand
+Solve, InjectionMoldingSolveCommand
+Pre-check, InjectionMoldingPreSolveCheckCommand
+Simulation Results, WebViewerCmd
+Target Body, InjectionBodyCommand
+Aesthetic Faces, VisualFacesCommand
+Process Settings, ProcessSettingsCommand
+Setup Summary, SummaryCardCommand
+Create Selection Set, InjectionMoldingCreateSelectionGroupCmd
+Properties, InjectionMoldingFusionPropertiesCommand
+Molding Process, MoldingProcessCommand
+Generate Moldflow Study File, ExportToMfSdyCommand
+Mass Participation Factors, SimMassParticipationCommand
+Global Contacts, SimGlobalExplicitContactsCommand
+Edit Contact Pair, SimEditContactPairCommand
+Manage Contacts, SimExplicitContactsManagerCommand
+Select Related Contacts, SimExplicitSelectRelatedContactsCommand
+Study Materials, SimGenerativeStudyMaterialsCommand
+Study Material, SimGenerativeFluidMaterialCommand
+Simulation Results, SimBucklingResultsCmd
+Simulation Results, SimExplicitResultsCmd
+Simulation Results, SimLSSResultsCmd
+Simulation Results, SimModalResultsCmd
+Simulation Results, SimNLSSResultsCmd
+Simulation Results, SimTopOptResultsCmd
+Simulation Results, SimThermalSteadyResultsCmd
+Stress-free Temperatures, SimThermalStressReferenceTemperatureCommand
+Simulation Results, SimThermalStressResultsCmd
+Edit Manufacturing Model, ActivateMfgWorkingModelCmd
+Delete, DeleteMfgWorkingModelCmd
+Duplicate, DuplicateMfgWorkingModelCmd
+Create Manufacturing Model, MSFWmdCreateWorkingModel
+Create Manufacturing Model, CreateMfgWorkingModelFromDesignCmd
+Finish Edit, FinishPrepareWorkingModelCmd
+Initialize Aggregation, InitializeAggregationCommand
+Adds files into aggregated files., MSFWmdAggregateFilesCmd
+Update Aggregation, UpdateAggregationCommand
+Update Referenced model, ReferenceManagerCmd
+Open File, OpenFileFromUrnCmd
+Get Latest Dependencies, MfgGetLatestCmd
+Component Sources, MSFWmdComponentLibraryCmd
+Adds component instance to working model., MSFWmdAddComponentInstanceCmd
+Component Manager, MSFWmdCompManagerCmd
+Create Manufacturing Model, MSFWmdCreateAggregationAssetWorkingModelCmd
+Delete All Manufacturing Models, DeleteMfgWorkingModelsCmd
+Arrangement Statistics, IronAdditiveShow3DPackingDensity
+Simulate Additive Toolpath, IronAdditiveSimulation
+Exit Simulation, AdditiveSimulationStop
+Assign Body Presets, IronAssignBuildStrategy
+Create Machine Build File, IronAdditiveExportStrategy
+Fill Build Volume, FillPlatformCmd
+New Setup from G-Code, IronAdditiveImportGCode
+Duplicate, LinearArrangeCmd
+Edit, IronAdditiveEditPrintSetting
+Select, IronAdditiveSelectPrintSetting
+Print Statistics, IronAdditiveShowPrintStatistics
+Finish Results, AdditiveResultsStop
+Clear Solve Results, IronAdditiveDeleteProcSimResults
+Export Color 3MF, IronAdditiveExportColor3MF
+Export Compensated, IronAdditiveExportCompensated
+Export Compensated STL, IronAdditiveExportCompensatedSTL
+Export Warped STL, IronAdditiveExportWarpedSTL
+View Mesh, IronAdditiveMeshView
+Open Results Folder, IronAdditiveOpenResultsFolder
+Generate Mesh, IronAdditiveProcessSimMesh
+PreCheck, IronAdditiveProcessSimPreCheck
+Settings, IronAdditiveProcessSimulation
+Solve, IronAdditiveProcessSimSolve
+Toggle Element Edges, IronAdditiveProcessSimToggleEdges
+Toggle Min/Max Probes, IronAdditiveProcessSimMinMaxProbe
+View Results, IronAdditiveResultsView
+Remove Excess Components, RemoveExcessParts
+Split Supports, SplitSupportCmd
+Create Setup from Envelope, IronCreateSetupFromEnvelope
+Create Setups from Arrangement, IronCreateSetupsFromArrangement
+Flat pattern visibility, IronFlatPatternVisibility
+Add to New Folder, IronAddToNewFolder
+Associate Named View, IronAssociateNamedView
+Automatic In-Process Stock Generation, IronAutomaticIPSGeneration
+Create Selection Set, IronCreateSelectionGroupCmd
+Find in Browser, IronFindInBrowser
+Show All Bodies, CAMShowAllBodiesCmdDef
+Show All Components, CAMShowAllComponentsCmdDef
+CAM Tech Preview, CAMTechPreview
+Show/Hide, CAMVisibilityToggleCmdDef
+Measure, CamMeasureCommand
+Clear In-Process Stock Cache, IronClearIPSCache
+Clear Toolpath, IronClearToolpath
+Collapse All Children, IronCollapseAllChildren
+Compare and Edit, IronCompareAndEdit
+Copy, IronCopy
+Copy Parameter Name, IronCopyParameterName
+New Model, CreateCAMModel
+Create From Template, IronCreateFromTemplate
+Create Manual Inspection, IronCreateInspections
+Edit Manual Inspections, IronEditInspections
+Create Inspection Plan, IronCreateInspectionPlan
+New Setup, CreateSetupCmd
+Cut, IronCut
+Default Folder, IronDefaultFolder
+Delete, IronDeleteObject
+Delete, IronDeleteEditSubToolpath
+Delete Modifications, IronDiscardEdits
+Display Aligned Results, DisplayAlignedResults
+Show, IronDrawAllToolpathOps
+Show All, IronDrawAllToolpathsInParent
+Duplicate, IronDuplicate
+Edit Expression, IronEditExpression
+Machine Definition, IronEditMachineDefinition
+Edit Notes, IronEditNotes
+Edit Operation, EditOperationTemplate
+Edit Tool, IronEditTool
+Edit Manufacturing Model for Setup, IronEditWorkingModelSetup
+Expand All Children, IronExpandAllChildren
+Export Defaults, IronExportDefaults
+Promote, IronExtractEditSubToolpath
+Suggest Feeds and Speeds, SuggestFeedsAndSpeeds
+Generate Stock, IronGenerateStock
+Generate, IronGenerateToolpath
+Geometry Selection, GeometryFacesSelection
+Geometry Selection, GeometrySelection
+GrabWidget, GrabWidget
+Group, IronGroupEditObjects
+Dismiss warnings, HideWarnings
+Hole Recognition, IronHoleRecognition
+Edit, IronEditHoleRecognition
+Hole Signature, IronHoleFromModel
+Hole Template, IronHoleTemplateFromModel
+IconCmd, IconCmd
+Import Defaults, IronImportDefaults
+Import Inspection Results, ImportResults
+Inspection Report, IronInspectionReport
+Isolate, IronIsolateCmd
+Live Connection, LiveProbing
+Live Connection, LivePartAlignment
+Edit Machine, MachineBrowserEntry::EditCmd
+Remove Machine, MachineBrowserEntry::RemoveCmd
+Remove from Setup, MachineBrowserEntry::RemoveFromSetupCmd
+Replace Machine, MachineBrowserEntry::ReplaceCmd
+Machine Builder, MachineBuilder::HasMoved
+Machine Library, IronMachineLibrary
+Reset to default zero, MachinePreview::ResetToDefaultZero
+Save as home, MachinePreview::SaveAsHome
+Save as maximum limit, MachinePreview::SaveAsMax
+Save as minimum limit, MachinePreview::SaveAsMin
+Save as zero, MachinePreview::SaveAsZero
+Preview Machine Movements, NaNeuCAM::PartPositioning::MachinePreviewMovements
+Machine visibility, IronMachineVisibility
+Show machine, IronShowMachine
+Transparent, IronMachineTransparency
+Machining Time, IronMachiningTime
+Save Parameters as Defaults, IronMakeAllDefault
+Manufacturing Assistant, CAMManufacturingAssistant
+Measure Alignment, MeasureDatum
+Manual Inspect Surface, MeasureSurface
+Move Insert Marker Here, IronMoveInsertMarkerHere
+Move Insert Marker To End, IronMoveInsertMarkerToEnd
+Multi Edit Geometry Selection, MultiEditGeometrySelection
+Create NC Program, IronNcProgram
+Edit, IronEditNcProgram
+New Folder, IronFolder
+Open NC Output Folder, IronOpenNcFolder
+Optional, IronOptional
+Inspect Surface, PartAlignment_IronStrategy_inspectSurface
+Edit Alignment, PartAlignment_EditAlignment
+Post For Alignment, PartAlignment_IronNcProgram
+Import Inspection Results, PartAlignment_ImportResults
+Show Part Alignment Information, PartAlignment_IronPartAlignmentInfo
+Show Results, PartAlignment_IronShowResults
+Post with Alignment, PartAlignmentPostStop
+Post For Live Alignment, PartAlignmentPostLive
+Part Alignment, PartAlignmentStart_Delayed
+Live Part Alignment, PartAlignmentStart_Live
+Exit Part Alignment, PartAlignmentStop_Delayed
+Exit Live Part Alignment, PartAlignmentStop_Live
+Post Library, IronPostLibrary
+Post Process, IronPostProcess
+Print Setting Library, IronPrintSettingLibrary
+Protect, IronProtect
+Publish Setup Sheet, IronPublishSetupSheet
+Recalculate Inspection Results, IronRecalculateInspectionResults
+Record Manual Inspection, IronRecordManualMeasure
+Edit Manual Inspection, IronReplayManualMeasure
+Reset Defaults, IronResetDefaults
+Reset Part Alignment, IronResetPartAlignment
+Reset to System Default, IronResetToSystemDefault
+Reset to User Default, IronResetToUserDefault
+Result Display Settings, IronResultDisplaySettings
+Save as User Default, IronSaveAsUserDefault
+Scan Surface, ScanSurface
+, SetCreateSetupCmdContextCmd
+Setup Sheet, IronSetupSheet
+Setup Sheet Configurations, IronSetupSheetConfigurations
+Setup Sheet, IronSetupSheetSwitchboard
+Generate Shop Floor Bundle, IronGenerateShopFloorBundle
+Tool visibility, IronShowHideTool
+Show Tool, IronShowHideToolOnToolpath
+Show Tool Holder, IronShowHideToolHolder
+Show Tool Shaft, IronShowHideToolShaft
+Show Tool on Cursor, IronShowHideToolOnCursor
+Toolpath visibility, IronShowHideToolpathMoves
+Links, IronShowHideToolpathMovesLinks
+Leads, IronShowHideToolpathMovesLeads
+Cutting moves, IronShowHideToolpathMovesCutting
+Points, IronShowHideToolpathPoints
+Tool axes, IronShowHideToolpathAxes
+Toolpaths, IronShowHideAllToolpathMoves
+Turning profile visibility, IronShowHideTurningProfile
+Show rest material, IronShowHideRestMaterial
+Show spun profile, IronShowHideSpunProfile
+Show Log, IronShowLog
+Show Nest Log, ShowNestLog
+Show Part Alignment Information, IronPartAlignmentInfo
+Show Results, IronShowResults
+Similar Model Search, SimilarSearch
+Stock Materials Library, IronStockMaterialLibrary
+Store as Template, IronStoreAsTemplate
+Store as Hole Template, IronStoreAsHoleTemplate
+Suppress, IronSuppress
+Synchronize active setup, IronSyncActiveSetup
+Sync view with active setup, IronSyncOrientationActiveSetup
+Sync visibility with active setup, IronSyncVisibilityActiveSetup
+Sync ViewCube with active setup, IronSyncViewCubeActiveSetup
+Task Manager, IronTaskManager
+Template Library, IronTemplateLibrary
+Delete Local Template Library Testing Assets, CAMTemplateLibraryDeleteLocalTestingAssetsCommand
+TemplateLibraryImportTemplate, CAMTemplateLibraryImportTemplateCommand
+Tool Library, IronToolLibrary
+Toolpath Preview, IronToolpathPreview
+Show/Hide Toolpath, IronToolpathVisibilityToggle
+Hide, IronUndrawAllToolpathOps
+Hide All, IronUndrawAllToolpathsInParent
+Ungroup, IronUngroupEditObjects
+Unisolate All, IronUnisolateAllCmd
+Unisolate, IronUnisolateCmd
+Update Machine Model, UpdateMachineModelCmd
+View NC Code, IronViewNcCode
+View Orientation, IronViewOrientation
+Tool Top, IronViewOrientationTop
+Tool Bottom, IronViewOrientationBottom
+Tool Front, IronViewOrientationFront
+Tool Back, IronViewOrientationBack
+Tool Left, IronViewOrientationLeft
+Tool Right, IronViewOrientationRight
+Tool Isometric, IronViewOrientationIso
+Stock visibility, IronViewStock
+Transparent stock, IronTransparentStock
+Display in-process stock, IronInProcessStockDisplay
+Show Toolpath Data, IronViewToolpath
+Visible, BrowserVisibilityBulb
+Move Components, CAMMoveComponentsCommand
+Move Components, CAMNewMoveComponentsCommand
+Capture Position, IronCAMSnapshotCmd
+Collision Detection, CollisionDetectionCmd
+Minimize Build Height, IronMinimizeBoundingBox
+Orientation Results, IronAdditiveViewOrientationResults
+Place parts on platform, IronPlaceOnPlatform
+Delete, IronDeleteNonIronObject
+Simulate with Machine, IronMachineSimulation
+NC Code, SimulationNCCode
+Regenerate Stock, RegenerateStock
+Simulate, IronSimulation
+Hide Tool, SimulationHideTool
+Information, SimulationInfo
+Issues, SimulationIssues
+Machine, SimulationShowHideMachine
+Stock, SimulationShowHideStock
+Toolpaths, SimulationShowHideToolpath
+Flute, SimulationShowToolFlute
+Holder, SimulationShowToolHolder
+Shaft, SimulationShowToolShaft
+Stock to Model, SimulationStockToModel
+Exit Simulation, SimulationStop
+Create Setups For Manufacturing Model, IronCreateSetupsFromWorkingModel
+Create Setup From Manufacturing Model, IronCreateSetupFromWorkingModel
+Show/Hide Bend Lines, IronToggleBendLineVisibility
+Manufacturing Model Configuration Update, IronUpdateWorkingModelConfig
+Manufacturing Models Update, IronUpdateWorkingModels
+Activate Manufacturing Model, ActivateWorkingModel
+Break Link, IronBreakLink
+Update Manufacturing XRefs, IronUpdateCAMXRefs
+Import, NeuCAMImportCommand
+New Setup, IronSetup
+New Pattern, IronPattern
+Add to New Pattern, IronAddToNewPattern
+Edit, IronEditOperation
+Stock, IronStock
+Trim, IronToolpathTrim
+Delete Passes, IronToolpathEditDelete
+Leads and Links, IronToolpathEditLeadsLinks
+Replace Tool, IronToolpathEditToolChange
+Edit, IronEditAdditiveProcessSimulation
+Move Entry Positions, IronToolpathEditMoveStartPoints
+New Operation, IronNewOperation
+New Selection, IronNewSelection
+Modify, IronNewToolpathEdit
+New Support, IronAdditiveSupport
+New Study, IronAdditiveOrientations
+Create Derived Operation, IronDerivedOperation
+2D Milling, Iron2DMilling
+Feature Recognition, IronStrategy_featureRecognition
+Contour Feature Folder, IronStrategy_contourFeatureFolder
+Hole Feature Folder, IronStrategy_holeFeatureFolder
+2D Adaptive Clearing, IronStrategy_adaptive2d
+2D Pocket, IronStrategy_pocket2d
+2D Contour, IronStrategy_contour2d
+Face, IronStrategy_face
+Slot, IronStrategy_slot
+Trace, IronStrategy_path3d
+Thread, IronStrategy_thread
+Circular, IronStrategy_circular
+Bore, IronStrategy_bore
+Engrave, IronStrategy_engrave
+2D Chamfer, IronStrategy_chamfer2d
+Probe WCS, IronStrategy_probe
+Chain, IronStrategy_geometry_chain
+Chain, IronStrategy_geometry_curve_chain
+Face Contours, IronStrategy_geometry_face_contours
+Scratch Polygons, IronStrategy_geometry_multiple_scratch_polygons
+Orientation, IronStrategy_geometry_orientation
+Pockets, IronStrategy_geometry_pockets
+Pocket Recognition, IronStrategy_pocket_recognition
+Silhouette, IronStrategy_geometry_silhouette
+Sketch Profiles, IronStrategy_geometry_sketchProfiles
+Faces, IronStrategy_geometry_faces
+Bodies, IronStrategy_geometry_faces_body
+Bosses, IronStrategy_GEOMETRY_FACES_BOSS
+Chamfers, IronStrategy_geometry_faces_chamfer
+Color Selection, IronStrategy_geometry_faces_colour
+Fillets, IronStrategy_geometry_faces_fillet
+Faces, IronStrategy_geometry_faces_from_param
+Holes, IronStrategy_geometry_faces_hole
+Pockets, IronStrategy_geometry_faces_pocket
+2D Milling, Iron2DMilling_derived
+2D Adaptive Clearing, IronStrategy_adaptive2d_derived
+2D Pocket, IronStrategy_pocket2d_derived
+2D Contour, IronStrategy_contour2d_derived
+Face, IronStrategy_face_derived
+Slot, IronStrategy_slot_derived
+Trace, IronStrategy_path3d_derived
+Thread, IronStrategy_thread_derived
+Circular, IronStrategy_circular_derived
+Bore, IronStrategy_bore_derived
+Engrave, IronStrategy_engrave_derived
+2D Chamfer, IronStrategy_chamfer2d_derived
+Probe WCS, IronStrategy_probe_derived
+Drilling, IronDrilling
+Drill, IronStrategy_drill
+Drilling, IronDrilling_derived
+Drill, IronStrategy_drill_derived
+3D Milling, Iron3DMilling
+Adaptive Clearing, IronStrategy_adaptive
+Pocket Clearing, IronStrategy_pocket_new
+Horizontal, IronStrategy_horizontal_new
+Contour, IronStrategy_contour_new
+Ramp, IronStrategy_ramp
+Parallel, IronStrategy_parallel_new
+Scallop, IronStrategy_scallop_new
+Pencil, IronStrategy_pencil_new
+Radial, IronStrategy_radial_new
+Spiral, IronStrategy_spiral_new
+Morphed Spiral, IronStrategy_morphed_spiral
+Project, IronStrategy_project
+Blend, IronStrategy_blend
+Morph, IronStrategy_morph
+Steep and Shallow, IronStrategy_steep_and_shallow
+Flat, IronStrategy_flat
+Wall, IronStrategy_inclined_walls
+Corner, IronStrategy_rest_finishing
+Flow (Old), IronStrategy_flow
+Flow, IronStrategy_flow2
+3D Milling, Iron3DMilling_derived
+Adaptive Clearing, IronStrategy_adaptive_derived
+Pocket Clearing, IronStrategy_pocket_new_derived
+Horizontal, IronStrategy_horizontal_new_derived
+Contour, IronStrategy_contour_new_derived
+Ramp, IronStrategy_ramp_derived
+Parallel, IronStrategy_parallel_new_derived
+Scallop, IronStrategy_scallop_new_derived
+Pencil, IronStrategy_pencil_new_derived
+Radial, IronStrategy_radial_new_derived
+Spiral, IronStrategy_spiral_new_derived
+Morphed Spiral, IronStrategy_morphed_spiral_derived
+Project, IronStrategy_project_derived
+Blend, IronStrategy_blend_derived
+Morph, IronStrategy_morph_derived
+Steep and Shallow, IronStrategy_steep_and_shallow_derived
+Flat, IronStrategy_flat_derived
+Wall, IronStrategy_inclined_walls_derived
+Corner, IronStrategy_rest_finishing_derived
+Flow (Old), IronStrategy_flow_derived
+Flow, IronStrategy_flow2_derived
+Manual NC, IronStrategy_manual
+Tool Orientation, IronStrategy_tool_orientation
+Multi-Axis Milling, IronMultiAxisMilling
+Swarf, IronStrategy_swarf5d
+Multi-Axis Contour, IronStrategy_multiAxisContour
+Rotary Parallel, IronStrategy_rotary_finishing
+Rotary Pocket, IronStrategy_moduleworks_4axis_roughing
+Rotary Contour, IronStrategy_moduleworks_4axis_finishing
+Deburr, IronStrategy_moduleworks_automatic_deburring
+Advanced Swarf, IronStrategy_moduleworks_swarf
+Geodesic, IronStrategy_moduleworks_geodesic
+3+2 Clearing, IronStrategy_moduleworks_three_plus_two
+Multi-Axis Clearing, IronStrategy_moduleworks_multiaxis_roughing
+Multi-Axis Finishing, IronStrategy_moduleworks_multiaxis_finishing
+Multi-Axis Milling, IronMultiAxisMilling_derived
+Swarf, IronStrategy_swarf5d_derived
+Multi-Axis Contour, IronStrategy_multiAxisContour_derived
+Rotary Parallel, IronStrategy_rotary_finishing_derived
+Rotary Pocket, IronStrategy_moduleworks_4axis_roughing_derived
+Rotary Contour, IronStrategy_moduleworks_4axis_finishing_derived
+Deburr, IronStrategy_moduleworks_automatic_deburring_derived
+Advanced Swarf, IronStrategy_moduleworks_swarf_derived
+Geodesic, IronStrategy_moduleworks_geodesic_derived
+3+2 Clearing, IronStrategy_moduleworks_three_plus_two_derived
+Multi-Axis Clearing, IronStrategy_moduleworks_multiaxis_roughing_derived
+Multi-Axis Finishing, IronStrategy_moduleworks_multiaxis_finishing_derived
+Turning, IronTurning
+Turning Profile Roughing, IronStrategy_turningProfileRoughing
+Turning Profile Finishing, IronStrategy_turningProfileFinishing
+Turning Groove Roughing, IronStrategy_turningGrooveRoughing
+Turning Groove Finishing, IronStrategy_turningGrooveFinishing
+Turning Profile, IronStrategy_turningRoughing
+Turning Groove, IronStrategy_turningProfileGroove
+Turning Adaptive Roughing, IronStrategy_turningAdaptiveRoughing
+Turning Face, IronStrategy_turningFace
+Turning Single Groove, IronStrategy_turningGroove
+Turning Chamfer, IronStrategy_turningChamfer
+Turning Part, IronStrategy_turningPart
+Turning Thread, IronStrategy_turningThread
+Turning Trace, IronStrategy_turningTrace
+Part Handling, IronPartHandling
+Turning Stock Transfer, IronStrategy_turningStockTransfer
+Subspindle Grab, IronStrategy_turningSecondarySpindleGrab
+Bar Pull, IronStrategy_turningSecondarySpindlePull
+Subspindle Return, IronStrategy_turningSecondarySpindleReturn
+Tool Call, IronStrategy_turningToolCall
+Turning, IronTurning_derived
+Turning Profile Roughing, IronStrategy_turningProfileRoughing_derived
+Turning Profile Finishing, IronStrategy_turningProfileFinishing_derived
+Turning Groove Roughing, IronStrategy_turningGrooveRoughing_derived
+Turning Groove Finishing, IronStrategy_turningGrooveFinishing_derived
+Turning Profile, IronStrategy_turningRoughing_derived
+Turning Groove, IronStrategy_turningProfileGroove_derived
+Turning Adaptive Roughing, IronStrategy_turningAdaptiveRoughing_derived
+Turning Face, IronStrategy_turningFace_derived
+Turning Single Groove, IronStrategy_turningGroove_derived
+Turning Chamfer, IronStrategy_turningChamfer_derived
+Turning Part, IronStrategy_turningPart_derived
+Turning Thread, IronStrategy_turningThread_derived
+Turning Trace, IronStrategy_turningTrace_derived
+Part Handling, IronPartHandling_derived
+Turning Stock Transfer, IronStrategy_turningStockTransfer_derived
+Subspindle Grab, IronStrategy_turningSecondarySpindleGrab_derived
+Bar Pull, IronStrategy_turningSecondarySpindlePull_derived
+Subspindle Return, IronStrategy_turningSecondarySpindleReturn_derived
+Tool Call, IronStrategy_turningToolCall_derived
+Cutting, IronWLPC
+2D Profile, IronStrategy_jet2d
+Cutting, IronWLPC_derived
+2D Profile, IronStrategy_jet2d_derived
+Form Mill, IronStrategy_create_form_mill
+Probing, IronProbing
+Inspect Surface, IronStrategy_inspectSurface
+Probe Geometry, IronStrategy_probe_geometry
+Part Alignment, IronStrategy_part_alignment
+Align CAD to Part, IronStrategy_datum
+Create Manual Inspection, IronStrategy_manual_inspect
+CMM Inspection Setup, IronStrategy_cmm_inspection_setup
+Additive, IronAdditive
+Automatic Orientation, IronStrategy_additive_optimize_orientation
+Arrange, IronStrategy_additive_arrange_strategy
+Volume Support, IronStrategy_areavolume_additive_support
+Solid Volume Support, IronStrategy_areavolume_additive_fff_support
+Bar Support, IronStrategy_areabar_additive_support
+Solid Bar Support, IronStrategy_areabar_additive_fff_support
+Polyline Support, IronStrategy_areapolyline_additive_support
+Medial Axis with Polyline Support, IronStrategy_skeletonpolyline_additive_support
+Lattice Support, IronStrategy_lattice_additive_support
+Down Oriented Point Bar Support, IronStrategy_downoriented_additive_support
+Edge with Polyline Support, IronStrategy_edgepolyline_additive_support
+Edge with Bar Support, IronStrategy_edgebar_additive_support
+Cluster Contour with Polyline Support, IronStrategy_clustercontourpolyline_additive_support
+Surround Volume by Polyline Support, IronStrategy_surroundvolumepolyline_additive_support
+Base Plate Support, IronStrategy_baseplate_additive_support
+Setter Support, IronStrategy_setter_additive_support
+Lateral Support, IronStrategy_lateral_additive_support
+Additive Toolpath, IronStrategy_additive_buildstyle
+Individual Strategies, IronStrategy_additive_individual_strategies
+Study, IronStrategy_AdditiveProcessSimulation
+Create Machine Build File, IronStrategy_additive_formlabs_exportstrategy
+3MF Scene Export, IronStrategy_additive_3mf_exportstrategy
+DED, IronDED
+Feature Construction, IronStrategy_feature_construction
+DED, IronDED_derived
+Feature Construction, IronStrategy_feature_construction_derived
+Export XML, NeuCAMExportXMLCommand
+SetToolGuid, CAMSetToolGuidCommand
+SetRefToolGUID, CAMSetRefToolGUIDCommand
+PresetToolLibraryActions, CAMPresetToolLibraryActionsCommand
+ClearToolLibraryActions, CAMClearToolLibraryActionsCommand
+Import 3D Tool, CAMImport3DToolCommand
+SetMachine, CAMSetMachineCommand
+SetPrintSetting, CAMSetPrintSettingCommand
+SetPostScript, CAMSetPostScriptCommand
+TestSimulationPlayerCmd, CAMTestSimulationPlayerCmd
+Arrange Statistics, Simple3dArrangeReportCmdDef
+Preview Machine Movements, MachineBuilder::ArmPreview
+Edit in Machine Builder, MachineBuilder::EditInMachineBuilder
+Preview Machine Movements, MachineBuilder::MachinePreviewMovements
+Move Components, MachineBuilder::MoveComponents
+Machine Builder, MachineBuilder::Start
+Finish, MachineBuilder::Stop
+Cancel, MachineBuilder::Cancel
+Update Machine Model Document, MachineBuilder::UpdateCurrentDocument
+Machine Builder, MachineBuilderWithLocalMachine::Start
+Edit Machine Definition, MachineBuilder::MachineEdit
+Select Machine, MachineBuilder::MachineSelection
+Set Up Machine Model, MachineBuilder::ModelSelection
+Orient Machine Model, MachineBuilder::OrientateMachine
+Update Source Machine, MachineBuilder::UpdateSourceMachine
+New Offline Drawing Item, NewPLMOfflineFusionDrawingItemBasedFusionCommand
+New Drawing, NewDrawingMenuCommand
+Create Drawing, FusionDrawingCreateFromComponentsCommand
+From Design, NewFusionDrawingDocumentCommand
+New Drawing Template, NewFusionDrawingTemplateCommand
+Dashboard Create Drawing, DashboardCreateFusionDrawingCommand
+Export DWG, ExportFusionDrawingDocumentCommand
+Export Sheet as DXF, FusionDrawingExportDXFCommand
+Export PDF, FusionDrawingExportPDFCommand
+Export PDF, FusionDrawingExportSinglePDFCommand
+Export PDF, FusionDrawingExportSelectedSheetsPDFCommand
+Output Drawing Template, ExportFusionDrawingTemplateCommand
+Export CSV, FusionDrawingExportPartsListCommand
+Undo, FusionDrawingUndoCommand
+Redo, FusionDrawingRedoCommand
+Base View, FusionDrawingViewBaseCommand
+Base View Placeholder, FusionDrawingViewBaseTemplateCommand
+Edit View, FusionDrawingViewEditCommand
+Break View, FusionBrokenViewCommand
+Broken View Edit, FusionBrokenViewEditCommand
+Linear Dimension, FusionDrawingLinearDimensionCmd
+Aligned Dimension, FusionDrawingAlignedDimensionCmd
+Angular Dimension, FusionDrawingAngularDimensionCmd
+Radius Dimension, FusionDrawingRadialDimensionCmd
+Baseline Dimension, FusionDrawingBaselineDimensionCmd
+Chain Dimension, FusionDrawingChainDimensionCmd
+Ordinate Dimension, FusionDrawingOrdinateDimensionCmd
+Arc Length Dimension, FusionDrawingArcDimensionCmd
+Edge Extension, FusionDrawingEdgeExtensionCmd
+Dimension Break, FusionDrawingDimensionBreakCmd
+Add Dimension Break, FusionDrawingAddDimensionBreakCmd
+Remove Dimension Break, FusionDrawingRemoveDimensionBreakCmd
+Curve Min Max Dimension, FusionDocMinMaxDimensionCmd
+Auxiliary View, FusionDrawingViewAuxiliaryCommand
+Arrange Dimensions, FusionDrawingDimensionArrangeCmd
+Match Dimension, FusionDrawingMatchDimensionCmd
+Match Dimension, FusionDrawingMatchDimCntxMenuCmd
+Flip Arrows, FusionDrawingFlipDimArrowCmd
+Flip Arrows, FusionDrawingFlipDimArrowCntxMenuCmd
+Stack Dimensions, FusionDrawingDimensionStackArrangeCmd
+Align Dimensions, FusionDrawingDimensionAlignArrangeCmd
+Text, FusionDrawingMTextCommand
+Leader Note, FusionDrawingLeaderCommand
+Bend Note, FusionDrawingBendNoteLeaderCommand
+Hole and Thread Note, FusionDrawingHoleThreadNoteLeaderCommand
+Note, FusionDrawingNoteCommand
+Leader, FusionDrawingArrowCommand
+Table, FusionDrawingTableCommand
+Edit Table Text, FusionDrawingTableTextEditCommand
+Table, FusionDrawingTableEditCommand
+Center Line, FusionDrawingCenterlineCommand
+Center Mark, FusionDrawingCentermarkCommand
+Center Mark Pattern, FusionDrawingCenterPatternCommand
+Center Mark Pattern, FusionDrawingCenterPatternEditCommand
+Diameter Dimension, FusionDrawingDiameterDimensionCmd
+Jogged Radial Dimension, FusionDrawingJoggedRadiusDimensionCmd
+Dimension, FusionDrawingSingleDimensionCmd
+Simple Section View, FusionDrawingViewSimpleSectionCommand
+Section View, FusionDrawingViewSectionCommand
+Breakout Section View, FusionDrawingBreakoutSectionViewCommand
+Edit Breakout Section View, FusionDrawingBreakoutSectionViewEditCommand
+Detail View, FusionDrawingViewDetailCommand
+Perspective View, FusionDrawingViewPerspectiveCommand
+Projected View, FusionDrawingViewProjectCommand
+Projected View Placeholder, FusionDrawingViewProjectTemplateCommand
+Move, FusionDrawingMoveCmd
+Rotate, FusionDocRotateCmd
+Edit Hatch, FusionDrawingHatchEditCmd
+Reset, FusionDocRestoreDefaultsCmd
+Edit Dimension, FusionDrawingDimensionEditCmd
+Delete, FusionDrawingEraseCmd
+Delete, FusionDocDeleteCmd
+Pan, FusionDrawingPanCmd
+Zoom Window, FusionDrawingZoomCmd
+Fit, FusionDrawingFitCmd
+Reassociate, FusionDrawingDimReassociateCmd
+Reassociate, FusionDrawingSmartObjReassociateCmd
+Reassociate, FusionDrawingDisabledReassocCmd
+Reassociate, FusionDrawingAcmSymbolReassocCmd
+Reassociate, FusionDrawingCustomLeaderReassociateCmd
+Continue, FusionDrawingContinueCmd
+Edit Title Block, FusionDrawingTitleBlockEditCommand
+Parts List, FusionDrawingCreatePartsListCommand
+Table, FusionDrawingNewTableCommand
+Table Placeholder, FusionDrawingNewTableTemplateCommand
+Custom Table, FusionDrawingEmptyTableCommand
+Parts List, FusionDrawingPartsListTableCommand
+Bend Table, FusionDrawingBendTableCommand
+Revision History, FusionDrawingRevisionTableCommand
+Bend Identifier, FusionDrawingBendIDCommand
+Hole Table, FusionDrawingHoleTableCommand
+Balloon, FusionDrawingBalloonCommand
+Balloon, FusionDrawingSplineBalloonCommand
+Renumber, FusionDrawingRenumberCommand
+Align Balloons, FusionDrawingAlignBalloonCommand
+Edit Text, FusionDrawingMTextEditCommand
+Edit Leader Text, FusionDrawingMLeaderContentEditCommand
+GripStretch, FusionDrawingGripStretchCommand
+Revision Cloud, FusionDocRevCloudCommand
+New Title Block, FusionDrawingNewTitleBlockCommand
+Edit Title Block, FusionDrawingBlockEditCommand
+Finish Title Block, FusionDrawingBlockCloseCommand
+Line, FusionDrawingLineCommand
+Center Radius Circle, FusionDrawingCircleCommand
+CircleDiameter, FusionDrawingCircleDiameterCommand
+Circle2Point, FusionDrawingCircle2PointCommand
+Circle3Point, FusionDrawingCircle3PointCommand
+2-Point Rectangle, FusionDrawingRectangleCommand
+3-Point Arc, FusionDrawingArcCommand
+ArcCenter, FusionDrawingArcCenterCommand
+ArcTangent, FusionDrawingArcTangentCommand
+Ellipse, FusionDrawingEllipseCommand
+Copy, FusionDrawingCopyCommand
+Offset, FusionDrawingOffsetCommand
+Trim, FusionDrawingTrimCommand
+Extend, FusionDrawingExtendCommand
+Attribute, FusionDrawingAttDefCommand
+Attribute Definition Edit, FusionDrawingAttEditCommand
+Legacy Text Edit, FusionDrawingLegacyTextEditCommand
+Edit Border, FusionDrawingBorderEditCommand
+Finish Border, FusionDrawingBorderCloseCommand
+Measure, FusionDrawingMeasureCommand
+Datum Identifier, FusionDrawingDatumIdCmd
+Symbol Edit, FusionDrawingSymbolEditCmd
+Feature Control Frame, FusionDrawingFeatureControlFrameCmd
+Surface Texture, FusionDrawingSurfaceTextureCmd
+Welding, FusionDrawingWeldSymbolCmd
+Taper and Slope, FusionDrawingTaperSlopeSymbolCmd
+Get Latest, FusionDocUpdateCommand
+Choose Version, FusionDocChooseVersionCommand
+Show/Hide, FusionDrawingShowHideCommand
+Suppress/UnSuppress, FusionDrawingSuppressUnsuppressCommand
+Suppress, FusionDrawingSuppressCommand
+Unsuppress, FusionDrawingUnsuppressCommand
+Show All Components, FusionDrawingShowAllCommand
+Show All Components, FusionDrawingShowAllChildCommand
+Unsuppress All Components, FusionDrawingUnsuppressAllCommand
+Unsuppress All Components, FusionDrawingUnsuppressAllChildCommand
+Suppress All Except Selected, FusionDrawingSuppressAllExceptSelectedCommand
+Capture Image, FusionDocScreenshotCmd
+Open, OpenRelatedDesignCommand
+SmartSheet, FusionDrawingSmartSheetCommand
+SmartDrawing, FusionDrawingSmartDrawingCommand
+Show In Location, ShowInLocationDrawingCmd
+Change Document Settings, FusionChangeDocSettingCommand
+Import Document Settings, FusionImportDocSettingsCommand
+Change Document Settings, FusionChangeMultiDocSettingCommand
+Change Text Height Group, FusionChangeTextHeightGroupCommand
+Change Font, FusionChangeFontCommand
+Change Line Width Group, FusionChangeLineWidthGroupCommand
+Change Dimension Units, FusionChangeDimensionUnitsCommand
+Change Revision Scope, FusionChangeRevisionScopeCommand
+Sheet Size, FusionChangeSheetSettingCommand
+Change Sheet Settings, FusionChangeMultiSheetSettingsCommand
+Change Sheet Size, FusionChangeSheetSizeCommand
+Change Title Block, FusionChangeTitleBlockCommand
+Change Display Border, FusionChangeDisplayBorderCommand
+Change Display Title Block, FusionChangeDisplayTitleBlockCommand
+Show/Hide, FusionChangeBorderVisibilityCommand
+Show/Hide, FusionChangeTitleBlockVisibilityCommand
+Title Blocks, FusionTitleBlockManagementCommand
+Edit Properties, FusionEditPropertiesCommand
+Reset Properties, FusionResetPropertiesCommand
+Revision Marker, FusionDrawingRevMarkerCommand
+Revision Marker Edit, FusionDrawingRevMarkerEditCommand
+Switch Configuration, SwitchConfigurationCommand
+Undo, DrawingUndoCommand
+Redo, DrawingRedoCommand
+Quick Add, FusionDrawingSheetNewCommand
+Add Sheet, FusionDrawingSheetAddCommand
+Activate Sheet, FusionDrawingSheetActivateCommand
+Delete Sheet, FusionDrawingSheetDeleteCommand
+Delete Sheets, FusionDrawingMultiSheetDeleteCommand
+Rename Sheet, FusionDrawingSheetRenameCommand
+Reorder Sheet, FusionDrawingSheetReorderCommand
+Duplicate Sheet, FusionDrawingSheetDuplicateCommand
+Drawing Debug, FusionDrawingDebugCommand
+Print, FusionDrawingPrintCommand
+Print, FusionDrawingPrintSingleSheetCommand
+Print, FusionDrawingPrintSelectedSheetsCommand
+Insert Image, FusionDrawingImageInsertCommand
+Image, FusionDrawingBlockEditorImageInsertCommand
+Insert Image, FusionDrawingTemplateImageInsertCommand
+Image, FusionDrawingImageEditCommand
+Properties, FusionDrawingBlockRefEditCommand
+Feature Toggle, FusionDrawingFeatureToggleCommand
+PARTS LIST, FusionDrawingPartsListEditCommand
+BEND TABLE, FusionDrawingBendTableEditCommand
+REVISION HISTORY, FusionDrawingRevisionTableEditCommand
+HOLE TABLE, FusionDrawingHoleTableEditCommand
+ORIGIN, FusionDrawingOriginSymbolEditCommand
+Create Sketch, FusionDrawingSketchCommand
+Finish Sketch, FusionDrawingSketchCloseCommand
+Show/Hide, SketchShowHideCommand
+Rename Sketch, FusionDrawingSketchRenameCommand
+Cut, FusionDocCutSketchCommand
+Copy, FusionDocCopySketchCommand
+Paste, FusionDocPasteSketchCommand
+Copy, FusionDocCopyMtextCommand
+Cut, FusionDocCutMtextCommand
+Paste, FusionDocPasteTextCommand
+Paste, FusionDocPasteCustomMTextCommand
+Cut, FusionDocCutGeomEntityCommand
+Copy, FusionDocCopyGeomEntityCommand
+Paste, FusionDocPasteGeomEntityCommand
+Paste, FusionDocPasteExternalCustomTableCommand
+Copy, FusionDocCopyCustomTableCommand
+Paste, FusionDocPasteCustomTableCommand
+Cut, FusionDocCutDefaultCommand
+Copy, FusionDocCopyDefaultCommand
+Paste, FusionDocPasteDefaultCommand
+Delete, FusionDrawingSketchDeleteCommand
+Edit Sketch, FusionDrawingSketchEditCommand
+Edit Palette Linetype, EditPaletteLinetypeCommand
+Edit Palette Lineweight, EditPaletteLineweightCommand
+Edit Palette Color, EditPaletteColorCommand
+Toggle Other Geometry, TogglePaletteOtherGeometryCommand
+Toggle Palette Snap, TogglePaletteSnapCommand
+Toggle Palette Grid, TogglePaletteGridCommand
+Toggle Palette Border, TogglePaletteBorderCommand
+Toggle Palette Sheet, TogglePaletteSheetCommand
+Quick Auto Dimension, FusionDrawingQuickAutoDimensionCommand
+Edit Auto Dimensions, FusionDrawingAutoDimensionEditCommand
+Get Alternate Dimension, FusDocGetAlternateDimCommand
+Update, FusionDrawingUpdateLinkTable
+Break, FusionDrawingBreakLinkTable
+Refresh, ManageExtRefreshCmd
+Change Automation Settings, FusionDocAutomationSettingsCmd
+Auto Dimension, FusionDrawingAutoDimensionCommand
+Tidy Up, FusionDrawingTidyUpCommand
+Change Zoom Level, PublisherChangeZoomLevelCmd
+Activate Storyboard, PublisherActivateStoryboardCommand
+Rename Storyboard, RenameStoryboardCmd
+Transform Components, PublisherMoveComponentsCommand
+Restore Home, PublisherRestoreHomeCommand
+Auto Explode: One Level, PublisherExplodeDirectChildrenCommand
+Auto Explode: All Levels, PublisherExplodeAllPartsCommand
+Manual Explode, PublisherManualExplodeCommand
+Delete, PublisherDeleteCommand
+Delete Actions, PublisherDeleteActorCommand
+Copy, PublisherCopyCommand
+Paste, PublisherPasteCommand
+Move Steps/Storyboards, PublisherMoveSequenceEntryCommand
+Show/Hide, PublisherVisibilityToggleCmd
+Appearance, PublisherAppearanceCommand
+Change Material Scope, PublisherScopeMaterialCommand
+Toggle Material, PublisherMaterialToggleCommand
+Duration, PublisherDurationCmd
+Edit Start/End, PublisherEditActionCmd
+Edit Start, PublisherEditSmartObjectActionCmd
+Camera Change, PublisherCreateCameraActionCmd
+Reverse, ReverseSequenceEntryCmd
+Rename, RenameStoryboardShellCmd
+Align start time, AlignActionStartTimesCmd
+Align end time, AlignActionEndTimesCmd
+Select All After, SelectAllAfterCmd
+Select All Before, SelectAllBeforeCmd
+Change Action Start Time, PublisherChangeActionStartTimeCmd
+Change Action End Time, PublisherChangeActionEndTimeCmd
+Move Action, PublisherMoveActionCmd
+View, PublisherToggleCameraRecordingCmd
+Expand, PublisherExpandCompositeActionsCmd
+Reorder Actor, ReorderActorCommand
+Publish Video, ExportVideoCommand
+Find in Browser, PublisherFindInBrowser
+Find in Window, PublisherFindInWindow
+Edit Application Settings, ApplicationSettingsEditCmd
+New Storyboard, PublisherCreateStoryboardCommand
+Edit Action, PublisherEditTransformActionCommand
+From Animation, PublisherNewDrawingDocumentCommand
+Isolate, PublisherIsolateCmd
+Unisolate, PublisherUnisolateCmd
+Create Selection Set, PublisherCreateSelectionGroupCmd
+Activate Config, PublisherActivateConfigRow
+PublisherViewCamera, PublisherViewDisplayCommand
+Create Callout, CalloutCommand
+Move Callout, DragCalloutCmd
+Edit Callout, CalloutEditCommand
+Show/Hide Trail Lines, PublisherTrailVisibilityCommand
+Show All Trail Lines, PublisherTrailShowAllCommand
+Hide All Trail Lines, PublisherTrailHideAllCommand
+Move Trail Line, TrailDragCmd
+New Electronics Design, NewElectronDesignMenuCommand
+New PCB, NewElectronPcbDocumentCommand
+New Schematic, NewElectronSchDocumentCommand
+New Electronics Library, NewElectronLbrDocumentCommand
+Window Selection, Electron::GroupWindow
+Polygon Selection, Electron::GroupPolygon
+Cross Selection, Electron::GroupCrossSelection
+Net Class and Signal Colors, Electron::NetClassAndSignalColors
+Push to 3D PCB, Electron::Pcb3DViewAdvanced
+Configure 3D PCB, PCB3DConfigCmd
+Push to 2D PCB, PCBExportBrdCmd
+Link to 2D PCB, PCBLinkToBrdCmd
+3D Package Editor, Package3DCmd
+Finish, Package3DStop
+New Package, Package3DCreateCmd
+Remove 3D PCB Link, RemovePCB3DLinkCmd
+Create Footprint, FootprintSketchCreateCmd
+New Electronics Design, NewElectronDesignDocumentCommand
+Switch to PCB document, SwitchPcbDocCmd
+Switch to Schematic document, SwitchSchDocCmd
+Get All Latest, GetLatestElectronCmd
+Get Latest PCB, GetLatestPcbCmd
+Get Latest Schematic, GetLatestSchCmd
+Launch the undo command, LaunchUndoCmdDef
+Launch the redo command, LaunchRedoCmdDef
+Reference a PCB document, ReferenceToPCBCmd
+Reference a Schematic document, ReferenceToSCHCmd
+Remove PCB Link, RemovePCBLinkCmd
+Remove Schematic Link, RemoveSCHLinkCmd
+Save all command, ElectronSaveAllCmd
+Save as all linked files command, ElectronSaveAsAllCmd
+Save BOM data, SaveBOMDataCmd
+Export PCB Data for Ansys, AnsysCmd
+Export ODB++ Output, CAMOdbExportCmd
+Show Editor Side Panel, EditorSidePanelOpenCommand
+Hide Editor Side Panel, EditorSidePanelCloseCommand
+Show Electron Design Description, ShowElectronDescriptionCommand
+Hide Electron Design Description, HideElectronDescriptionCommand
+Show Content Manager Panel, ContentManagerPanelOpenCommand
+Hide Content Manager Panel, ContentManagerPanelCloseCommand
+Show Design Manager, ShowElectronDesignManagerCommand
+Hide Design Manager, HideElectronDesignManagerCommand
+Show Inspector, ShowElectronInspectorCommand
+Hide Inspector, HideElectronInspectorCommand
+Show Analyze Signal, ShowElectronAnalyzeSignalCommand
+Hide Analyze Signal, HideElectronAnalyzeSignalCommand
+Show Display Layers Panel, ShowElectronLayersPanelCommand
+Hide Display Layers Panel, HideElectronLayersPanelCommand
+Show Errors Panel, ShowElectronErrorsPanelCommand
+Hide Errors Panel, HideElectronErrorsPanelCommand
+Show Command Guidance, ShowCommandGuidanceCommand
+Hide Command Guidance, HideCommandGuidanceCommand
+Show Selection Filter, ShowElectronSelectionFilterCommand
+Hide Selection Filter, HideElectronSelectionFilterCommand
+Show Sheets, ShowElectronSheetsCommand
+Hide Sheets, HideElectronSheetsCommand
+Updates Eagle WIP libraries version information, UpdateEagleLibrariesVersions
+Search for 3D package updates., UpdateLbrPackagesCmd
+Updates Eagle WIP libraries information, RefreshEagleWIPLibraryCmd
+Deletes Eagle WIP library information, DeleteEagleWIPLibraryCmd
+Set focus on EAGLE command line bar, Electron::FocusEagleCommandLine
+Set focus on EAGLE command line bar, Electron::FocusEagleCommandLine0
+Set focus on EAGLE command line bar, Electron::FocusEagleCommandLine1
+Push Vias, TogglePushViasCmd
+ViolationMode, ViolationModeCommand
+Ignore Violators, IgnoreViolatorsCommand
+Push Violators, PushViolatorsCommand
+Walkaround Violators, WalkaroundViolatorsCommand
+Import sch and brd command, ImportSCHAndBRDCmd
+Shortcuts, Electron::Shortcuts
+Import eagle files as electronics design, ElectronicsDesignImportCmd
+Import KiCAD files as electronics design, KicadDesignImportCmd
+Add, Electron::AddPart
+Analyze Signal, Electron::AnalyzeSignal
+Place Components, Electron::ToggleAddPanel
+Design Block, Electron::AddDesignBlock
+Align, Electron::Align
+Arc, Electron::Arc
+Arrange, Electron::Arrange
+Attribute, Electron::Attribute
+Autorouter, Electron::AutoRouter
+Outline Arc, Electron::BoardShapeArc
+Outline Circle, Electron::BoardShapeCircle
+Outline Polyline, Electron::BoardShapePolyline
+Outline Spline, Electron::BoardShapeSpline
+Bill of Materials, Electron::Bom
+Add Bus, Electron::Bus
+Break Out Bus, Electron::BusBreakOut
+Export Gerber, NC Drill, Assembly and Drawing Outputs, Electron::CAMExport
+CAM Preview, Electron::CAMPreview
+CAM Processor, Electron::CAMProcessor
+Change, Electron::Change
+Circle, Electron::Circle
+Net Class, Electron::Class
+Show All PCB Sketches, Electron::ConstructionShowAll
+Hide All PCB Sketches, Electron::ConstructionHideAll
+Copy, Electron::Copy
+Copy Format, Electron::CopyFormat
+Cut, Electron::Cut
+Delete, Electron::Delete
+Dimension, Electron::Dimension
+Display Layers, Electron::Display
+Design Rules, Electron::DRC
+Design Preferences, Electron::DesignPreferences
+ERC, Electron::ERC
+Check Design Rules, Electron::Errors
+Export Libraries, Electron::ExpLib
+Export, Electron::Export
+Fanout, Electron::Fanout
+Flip Board, Electron::FlipBoard
+Gate Swap, Electron::GateSwap
+Grid Settings, Electron::Grid
+Select, Electron::Group
+Select All, Electron::GroupAll
+Document Attributes, Electron::GlobalAttributes
+Hole (NPTH), Electron::AddHole
+Info, Electron::Info
+Insert Design Block, Electron::InsertDesignBlockToSch
+Insert Design Block, Electron::InsertDesignBlockToPCB
+Insert DXF/DWG, Electron::InsertDxf
+Insert Electronic Design, Electron::InsertElectronicDesignToSch
+Insert Electronic Design, Electron::InsertElectronicDesignToPCB
+Insert 2D PCB, Electron::Insert2DPCB
+Insert Schematic, Electron::InsertSch
+Invoke, Electron::Invoke
+IPC-D-356 Netlist, Electron::IpcNetlist
+Junction, Electron::Junction
+Label, Electron::Label
+Layer, Electron::Layer
+Layer Stack, Electron::LayerStack
+Line, Electron::Line
+Unlink from managed library on library.io, Electron::UnlinkLibrary
+Lock, Electron::Lock
+Lock All, Electron::LockAll
+Lock Current Layer, Electron::LockCurrentLayer
+Unlock All, Electron::UnlockAll
+Push changes to managed library on library.io, Electron::CreateLibrary
+Add Spice Model, Electron::AddSimModel
+Mark Local Origin, Electron::Mark
+Meander, Electron::Meander
+Miter, Electron::Miter
+Mirror, Electron::Mirror
+Module, Electron::Module
+Move, Electron::Move
+Name, Electron::Name
+Net, Electron::Net
+Net Breakout, Electron::NetBreakout
+New Symbol, Electron::NewSymbol
+New Footprint, Electron::NewPackage
+New Component, Electron::NewDevice
+Optimize, Electron::Optimize
+PTH Pad, Electron::Pad
+PTH Pad Array, Electron::PadArray
+Paint Roller, Electron::PaintRoller
+Paste, Electron::Paste
+Paste Pins, Electron::PastePins
+Pattern, Electron::Pattern
+PickAndPlace, Electron::PickAndPlace
+Pin, Electron::Pin
+Pin Array, Electron::PinArray
+Break Out Pins, Electron::PinBreakout
+Pin Swap, Electron::PinSwap
+Polygon Shape, Electron::PShape
+Polygon Pour, Electron::PPour
+Polygon Cutout, Electron::PCutout
+Polygon, Electron::Polygon
+Hide all Polygon Pour fills, Electron::PolyHideFillAll
+Re-fill Polygon Pours, Electron::PolyRefill
+Polygon Pour from Outline, Electron::PolygonizeCopy
+Show all Polygon Pour fills, Electron::PolyShowFillAll
+Port, Electron::Port
+Print, Electron::Print
+QuickRoute Airwire, Electron::QuickRouteAirWire
+QuickRoute Signal, Electron::QuickRouteSignal
+QuickRoute Multiple, Electron::QuickRouteMultiWire
+QuickRoute Smooth, Electron::QuickRouteSmooth
+QuickRoute Guided, Electron::QuickRouteGuided
+QuickTune, Electron::QuickTune
+Ratsnest, Electron::Ratsnest
+Rectangle, Electron::Rectangle
+Redo, Electron::Redo
+Redraw, Electron::ZoomRedraw
+Remove Spice Model, Electron::RemoveSimModel
+Replace, Electron::Replace
+Reposition Attributes, Electron::RepositionAttributes
+Replace Missing Fonts, Electron::ReplaceMissingFonts
+Replace Missing Fonts With Proportional, Electron::ReplaceMissingFontsUseProportional
+Replace Missing Fonts With Arial, Electron::ReplaceMissingFontsUseArial
+Reroute, Electron::Reroute
+Unroute, Electron::Ripup
+Unroute All, Electron::RipupAll
+Ripup Polygons, Electron::RipupAllPolygons
+Unroute Connected, Electron::RipupConnected
+Unroute Connected Same Layer, Electron::RipupConnectedSameLayer
+Unroute Between Components, Electron::RipupElementToElement
+Unroute Incomplete, Electron::RipupInComplete
+Unroute Signal, Electron::RipupSignal
+Unroute From-To, Electron::RipupFromTo
+Rotate, Electron::Rotate
+Route Manual, Electron::ManualRoute
+Route Differential Pair, Electron::RouteDiffPair
+Route Multiple, Electron::RouteMulti
+Run ULP, Electron::RunULP
+Run Script, Electron::RunScript
+Link to managed library on library.io, Electron::LinkLibrary
+Show, Electron::Show
+Signal, Electron::Signal
+Simulate, Electron::Simulate
+Show Simulation Overlay, Electron::SimOpToggle
+Voltage Probe, Electron::VProbe
+Phase Probe, Electron::VpProbe
+Analog Source Setup, Electron::SourceSetup
+Digital Source Setup, Electron::DSourceSetup
+Slice, Electron::Slice
+SMD Pad, Electron::Smd
+SMD Pad Array, Electron::SmdArray
+Split, Electron::Split
+Stop Command, Electron::StopCommand
+Via Stitching, Electron::Stitch
+Text, Electron::AddText
+Toggle Single Layer View, Electron::ToggleSingleLayer
+Undo, Electron::Undo
+Unroute, Electron::Unroute
+Unroute All, Electron::UnrouteAll
+Unroute Connected, Electron::UnrouteConnected
+Unroute Connected Same Layer, Electron::UnrouteConnectedSameLayer
+Unroute Between Components, Electron::UnrouteElementToElement
+Unroute Incomplete, Electron::UnrouteInComplete
+Unroute Signal, Electron::UnrouteSignal
+Unroute From-To, Electron::UnrouteFromTo
+Pull changes from managed library on library.io, Electron::UpdateLibrary
+Open Library Manager, Electron::LibraryManager
+Update design from library, Electron::UpdateDesignFromLibrary
+Update design from all libraries used in design, Electron::UpdateDesignFromAllLibraries
+Value, Electron::Value
+Assembly Variant, Electron::AssemblyVariant
+Via, Electron::Via
+Wire, Electron::Wire
+Zoom In, Electron::ZoomIn
+Zoom Out, Electron::ZoomOut
+Zoom Window, Electron::ZoomRect
+Zoom to Fit, Electron::ZoomToFit
+Synchronize, Electron::Synchronize
+Add Custom 3D Model, Electron::AddCustom3DModel
+Edit Custom 3D Model, Electron::EditCustom3DModel
+Remove Custom 3D Model, Electron::RemoveCustom3DModel
+Expand All Children, MSFCmnExpandCommand
+Collapse All Children, MSFCmnCollapseCommand
+Automatic Update, MSFNestAutoUpdateCmd
+Report, SDK.MAGNestReportCmd.Show
+3D Extruded, SDK.MAGNestRepresentationCmd.3DExtrude
+Compare, SDK.MSFCmnFusionLaunchCommand.MSFNestCompareNewCmd
+Unbind All, SDK.MAGNestBindUnbindPropertyCmd.ShapeUnbindAll
+Dimensions, SDK.MAGNestDisplayCmd.Dimensions
+Providers, SDK.MAGNestProvidersCmd.Config
+Hide All Sources, SDK.MAGNestGeoSourcesCmd.Hide
+Show Extraction Errors, SDK.MAGNestShowTranslateErrorDlgCmd.Show
+Create Nest Study, SDK.MAGNestStudyCmd.Create
+Enabled, SDK.MAGFeatObject.enabled.Toggle
+Header, SDK.MAGNestDisplayCmd.Header
+Delete All Sources, SDK.MAGNestGeoSourcesCmd.Delete
+Create Nest Kit, SDK.MAGNestKitsCmd.Create
+Create 3D Model, SDK.MSFNestCreateF3DCmd.Create
+Fabrication Info, SDK.MAGNestDisplayCmd.FabricationInfo
+Default Folder, SDK.MAGFeatDefaultFolderCmd.SetDefault
+Save Results, SDK.MAGNestCalculateCmd.Save
+2D, SDK.MAGNestRepresentationCmd.2D
+Shapes, SDK.MAGNestSelectionCmd.Shapes
+Process
+Material Library, SDK.MAGMatLibraryCmd.CreateNesting
+Mirror, SDK.MAGNestDisplayColorCmd.Mirror
+Edit Nest Study, SDK.MAGNestStudyCmd.Edit
+Duplicate, SDK.MAGFeatDuplicateCmd.DuplicateSelected
+Create Nest Kit, SDK.MAGNestAutoCreateKitsCmd.Create
+Bind All, SDK.MAGNestBindUnbindPropertyCmd.NestItemBindAll
+Show All Sources, SDK.MAGNestGeoSourcesCmd.Show
+Open, SDK.MAGNestOpenSourceCmd.Open
+SDK Test Options, SDK.MAGTestOptionsCmd.Test
+Edit, SDK.MAGNestEditNestCmd.Edit
+Start Extract, SDK.MAGNestTranslateCmd.ContextExtract
+Nest Properties, SDK.MAGNestShapeCmd.Create
+Last, SDK.MAGNestViewCmd.Last
+Nested Orientation, SDK.MAGNestDisplayColorCmd.NestedOrientation
+Delete, SDK.MAGFeatDeleteCmd.DeleteSelected
+Update, SDK.MAGFeatUpdateCmd.UpdateSelection
+Delete, SDK.MSFNestDeleteCmd.DeleteSelected
+Contours, SDK.MAGNestSelectionCmd.Contours
+Previous, SDK.MAGNestViewCmd.Previous
+Paste, SDK.MAGFeatPasteCmd.PasteCopied
+Sheet Construction Points, SDK.MAGNestDisplayCmd.SheetConstructionPoint
+Save All Results, SDK.MAGNestSaveCmd.SaveAll
+Find in Window, SDK.MAGFeatAutoZoomCmd.Create
+Inspect, SDK.MAGNestInfoPanelCmd.Context
+Start, SDK.MAGNestCalculateCmd.Start
+Copy, SDK.MAGFeatCopyCmd.CopySelected
+Save All Results, SDK.MAGNestCalculateCmd.SaveAll
+Update All, SDK.MAGFeatUpdateCmd.UpdateAllTruNest
+SDK Test, SDK.MAGTestMainCommand.Test
+Sources, SDK.MAGNestTranslateCmd.Context
+Properties, SDK.MAGFeatPropertiesCmd.EditSelected
+Source Orientation, SDK.MAGNestDisplayColorCmd.SourceOrientation
+3D Compare, SDK.MAGNestRepresentationCmd.3DCompare
+Automatic
+Update, SDK.MAGFeatAutoUpdateCmd.AddInNestingUtility
+Unbind All, SDK.MAGNestBindUnbindPropertyCmd.NestItemUnbindAll
+Source, SDK.MAGNestDisplayColorCmd.Source
+Update All, SDK.MAGFeatUpdateCmd.AutoUpdateNoDelay
+Suppress, SDK.MAGFeatObject.enabled.Suppress
+Geometry, SDK.MAGNestDisplayCmd.Geometry
+Material, SDK.MAGNestDisplayColorCmd.Material
+Default, SDK.MAGNestDisplayColorCmd.Default
+Sheet Borders, SDK.MAGNestDisplayCmd.SheetGeometry
+Segments, SDK.MAGNestSelectionCmd.Segments
+TruNest to F3D, SDK.MSFNestMSIFileToF3DCmd.Import
+Export, SDK.MAGNestExportCachedDxfCmd.Export
+3D Detailed, SDK.MAGNestRepresentationCmd.3DDetailed
+Material and Packaging Presets, SDK.MSFNestSaveContainerDataCmd.Create
+Export, SDK.MAGNestExportCmd.FusionExport
+Edit Nest Kit, SDK.MAGNestKitsCmd.Edit
+Process Material Library, SDK.MAGMatLibraryCmd.FusionNesting
+Bind All, SDK.MAGNestBindUnbindPropertyCmd.ShapeBindAll
+Add Folder, SDK.MAGFeatCreateFolderCmd.AddToSelected
+Auto-zoom, SDK.MAGNestAutoZoomCmd.toggle
+Auto-zoom inspect, SDK.MAGNestAutoZoomCmd.inspect
+Calculate, SDK.MAGNestCalculateCmd.Calculate
+Update All, SDK.MAGFeatUpdateCmd.AutoUpdate
+Shape, SDK.MAGNestDisplayColorCmd.Shape
+Shaded, SDK.MAGNestDisplayCmd.Shaded
+Open, SDK.MAGFeatOpenExternalLinkCmd.Open
+Annotations, SDK.MAGNestDisplayCmd.ExtraText
+Construction Points, SDK.MAGNestDisplayCmd.ConstructionPoint
+Edit Shape, SDK.MAGNestShapeCmd.Edit
+Compare, SDK.MAGNestCompareCmd.Compare
+Sheets, SDK.MAGNestSelectionCmd.Sheets
+Compare, SDK.MSFCmnFusionLaunchCommand.CompareCmd
+Extra Geometry, SDK.MAGNestDisplayCmd.ExtraGeometry
+Export, SDK.MAGNestExportCmd.Export
+Create Nest, SDK.MAGNestEditNestCmd.Create
+Process
+Material Library, SDK.MAGMatLibraryCmd.Create
+Properties, SDK.MAGNestShapeCmd.Context
+Create Manufacturing Model, SDK.MSFNestCreateWorkingModelCmd.Create
+Wireframe, SDK.MAGNestDisplayCmd.Wireframe
+Sources, SDK.MAGNestSelectionCmd.Sources
+Extra Construction Points, SDK.MAGNestDisplayCmd.ExtraConstructionPoint
+First, SDK.MAGNestViewCmd.First
+Segment, SDK.MAGNestDisplayColorCmd.Segment
+Info Panel, SDK.MAGNestInfoPanelCmd.Show
+Open, SDK.MSFNestOpenSourceCmd.Open
+Sources, SDK.MAGNestTranslateCmd.Create
+Online, SDK.MAGNestOnlineOfflineCmd.AddInInv
+Providers, SDK.MAGNestUpdateAssemblyProviderCmd.Update
+Cancel, SDK.MAGNestCalculateCmd.Cancel
+Sheet Text, SDK.MAGNestDisplayCmd.SheetText
+Auto-zoom select, SDK.MAGNestAutoZoomCmd.select
+Visibility, SDK.MAGFeatObject.visible.Toggle
+Next, SDK.MAGNestViewCmd.Next
+Stop, SDK.MAGNestCalculateCmd.Stop
+Auto-zoom off, SDK.MAGNestAutoZoomCmd.off
+Create Nest Study, SDK.MAGNestStudyCmd.Context
+Update All, SDK.MAGFeatUpdateCmd.UpdateAll
+Refresh, SDK.MAGNestRefreshCmd.Refresh
+Generate, SDK.MAGNestCalculateCmd.Generate
+Labels, SDK.MAGNestLabelsCmd.Show
+Rename, SDK.MAGFeatRenameCmd.RenameSelected
+Remove component from aggregated asset., MSFNestRemoveAggregateCompCmd
+Nest Preparation, MSFNestAuthoringCmd
+Import TruNest MSI, ImportTruNestMSI
+Export TruNest MSI, ExportTruNestMSI
+Shape properties, MSFNestShapeCmd
+Create Nest Study, MSFNestCreateStudyCmd
+Edit Nest Study, MSFNestEditStudyCmd
+Compare, CompareCmd
+Create Manufacturing Model, MSFNestShowSheetItemsCmd
+Part Labels, MSFNestPartLabelInfoCmd
+Edit Nest, MSFNestEditNestCmd
+Compare, MSFNestCompareNewCmd
+Synchronizes Nest, MSFNestSyncNestCmd
+Create Nest Study, MSFNestPrepareNestCmd
+Synchronizes the nesting data model with the aggregation., MSFNestSyncAggregationCmd
+Synchronizes the working models with the nesting data model., MSFNestSyncWorkingModelsCmd
+Automatic Naming, MSFNestNameConventionCmd
+Initialize Nest environment, MSFNestInitializeEnvCmd
+Create Cut List, MSFNestCutListCmdDef
+Arrange Statistics, MSFArrangeReportCmdDef
+Process Material Library, MSF.MAGMatLibraryCmd.FusionNesting
+Generate, MSF.MAGNestCalculateCmd.Generate
+Material and Packaging Presets, MSF.MSFNestSaveContainerDataCmd.Create
+Volumetric Lattice, VolFieldCreateLatticeCommand
+Edit Feature, VolFieldDcCreateLatticeEditCmd
+Create Volumetric Model, VolFieldCreateModelCommand
+Edit Feature, VolFieldDcCreateModelEditCmd
+Modify Volumetric Model, VolFieldModifyModelCommand
+Edit Feature, VolFieldDcModifyModelEditCmd
+Remove, VolFieldRemoveModelCommand
+Convert Volumetric Model to Mesh, VolFieldModelToMeshCommand
+Edit Feature, VolFieldDcModelToMeshEditCmd
+Insert Mesh, ParaMeshInsertCommand
+Convert Mesh body to Parametric Mesh, ParaMeshAdoptCommand
+Convert Parametric Mesh to Mesh body, ParaMeshDemoteCommand
+Tessellate, ParaMeshTessellateCommand
+Edit Feature, ParaMeshDcTessellateEditCommand
+Smooth, ParaMeshSmoothCommand
+Edit Feature, ParaMeshDcSmoothEditCommand
+Reduce, ParaMeshReduceCommand
+Edit Feature, ParaMeshDcReduceEditCommand
+Combine, ParaMeshCombineCommand
+Edit Feature, ParaMeshDcCombineEditCommand
+Repair, ParaMeshRepairCommand
+Edit Feature, ParaMeshDcRepairEditCommand
+Shell, ParaMeshHollowCommand
+Edit Feature, ParaMeshDcHollowEditCommand
+Remesh, ParaMeshRemeshCommand
+Edit Feature, ParaMeshDcRemeshEditCommand
+Reverse Normal, ParaMeshReverseNormalsCommand
+Edit Feature, ParaMeshDcReverseNormalsEditCommand
+Combine Face Groups, ParaMeshMergeFaceGroupsCommand
+Edit Feature, ParaMeshDcMergeFaceGroupsEditCommand
+Plane Cut, ParaMeshPlaneCutCommand
+Edit Feature, ParaMeshDcPlaneCutEditCommand
+Convert To Quad Mesh, ParaMeshToQuadMeshCommand
+Edit Feature, ParaMeshDcToQuadMeshEditCommand
+Convert Mesh, ParaMeshConvertCommand
+Edit Feature, ParaMeshDcConvertEditCommand
+Separate, ParaMeshExtractCommand
+Edit Feature, ParaMeshDcExtractEditCommand
+Generate Face Groups, ParaMeshCalculateFaceGroupsCommand
+Edit Feature, ParaMeshDcCalculateFaceGroupsEditCommand
+Edit Feature, ParaMeshDcMoveCopyEditCommand
+Scale Mesh, ParaMeshScaleCommand
+Edit Feature, ParaMeshDcScaleEditCommand
+Remove, ParaMeshRemoveCommand
+Create Mesh Section Sketch, ParaMeshPlanarSectionCommand
+Edit Feature, ParaMeshDcPlanarSectionEditCommand
+Direct Edit, ParaMeshBaseFeatureCreateCommand
+Edit Feature, ParaMeshBaseFeatureActivateCommand
+Finish Direct Edit, ParaMeshBaseFeatureStopCommand
+Create Base Mesh Feature, ParaMeshEmptyBaseFeatureCommand
+Create Face Group, ParaMeshCreateFaceGroupCommand
+Erase And Fill, ParaMeshEraseAndFillCommand
+Insert Mesh, ParaMeshInsertAlignCommand
+Insert Mesh, ParaMeshPositionCommand
+Mesh Palette, ParaMeshShowSelectionPanelCmd
+Flat Shaded, ParaMeshFlatMeshShadingCommand
+Smooth Shaded, ParaMeshSmoothMeshShadingCommand
+Texture Extrude, ParaMeshTextureCommand
+Edit Feature, ParaMeshDcTextureEditCommand
+Mesh Align, ParaMeshAlignCommand
+Diagnostics, DiagnosticsCommand
+Get Quotes From 100kGarages.com, 100kGaragesButtonID
+Package Generator, PackageGenerator
+Axial Generator, cmd_id_Axial
+BGA Generator, cmd_id_BGA
+Chip Generator, cmd_id_Chip
+SOIC Generator, cmd_id_Soic
+DFN-2 Generator, cmd_id_DFN2
+DFN-3 Generator, cmd_id_DFN3
+DFN-4 Generator, cmd_id_DFN4
+Pin Header(Male) Right Angle Generator, cmd_id_header_right_angle
+Receptacle Header(Female) Right Angle Generator, cmd_id_header_right_angle_socket
+Pin Header(Male) Straight Generator, cmd_id_header_straight
+Receptacle Header(Female) Straight Generator, cmd_id_header_straight_socket
+SON Generator, cmd_id_Son
+Chip LED Generator, cmd_id_Chip_led
+QFP Generator, cmd_id_Qfp
+QFN Generator, cmd_id_Qfn
+Chip Array, 2 Side Convex Generator, cmd_id_chiparray_2side_convex
+Chip Array, 2 Side Flat/Concave Generator, cmd_id_chiparray_2side_flat_concave
+Chip Array, 4 Side Flat/Concave Generator, cmd_id_chiparray_4side_flat
+SOT143 Generator, cmd_id_sot143
+SOT223 Generator, cmd_id_sot223
+SOT23 Generator, cmd_id_sot23
+SOTFL Generator, cmd_id_sotfl
+PLCC Generator, cmd_id_Plcc
+Oscillator_j Generator, cmd_id_Oscillator_j
+Oscillator_l Generator, cmd_id_Oscillator_l
+SOJ Generator, cmd_id_Soj
+Crystal Generator, cmd_id_crystal
+Crystal(HC49) Generator, cmd_id_crystal_hc49
+DIP Generator, cmd_id_dip
+E-Cap Generator, cmd_id_ecap
+Melf Generator, cmd_id_Melf
+Molded Generator, cmd_id_Molded
+Female Standoff/Spacer Generator, cmd_id_female_standoff
+Male-Female Standoff/Spacer Generator, cmd_id_male_female_standoff
+SOD Generator, cmd_id_Sod
+Snap Lock Generator, cmd_id_Snaplock
+Radial Generator, cmd_id_Radial
+Radial Round Led Generator, cmd_id_Radial_Round_Led
+Cornerconcave Generator, cmd_id_Cornerconcave
+SODFL Generator, cmd_id_Sodfl
+TO/DPAK Generator, cmd_id_TODPAK
+Surface Mount Receptacle Header (Female) Straight Generator, cmd_id_surafce_mount_header_female
+Surface Mount Pin Header (Male) Straight Generator, cmd_id_surface_mount_pin_header_male
+Surface Mount Pin Header (Male) Right Angle Generator, cmd_id_surface_mount_pin_header_male_right_angle
+DIP Socket Generator, cmd_id_dip_socket
+Radial Dipped Rectangle Generator, cmd_id_Radial_Dipped_Rectangle
+Insert a manufacturer part, cadenasparts4cad
+Insert TraceParts Supplier Components, traceparts_insert
