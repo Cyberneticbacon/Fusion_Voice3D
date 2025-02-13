@@ -6,6 +6,7 @@ app = adsk.core.Application.get()
 ui = app.userInterface
 from . import grab_target as gt
 from . import Voice3d
+from . import target_assignment as ta
 class Length:
     def flip(self):
         self.length = self.length * -1
@@ -45,6 +46,8 @@ class Destination:
         if " " in length:
             self.length = Length(int(length.split(" ")[0]), length.split(" ")[1])
         else:
+            if length == "":
+                length = 0
             self.length = Length(int(length))
         if prep == "from":
             self.length.flip()
@@ -107,62 +110,87 @@ def extrude(targets: list, destination: Destination):
             extrudeInput.startExtent = start_from
             extrudes.add(extrudeInput)
     print("done")
+    
     return "Extruded"
 
+def fillet(targets: list, destination: Destination):
+    try:
+        app = adsk.core.Application.get()
+        design = app.activeProduct
+        root_comp = design.rootComponent
+        fillets = root_comp.features.filletFeatures
+        for target in targets:
+            target = target.get_target()
+            if isinstance(target, adsk.fusion.BRepEdge):
+                filletInput = fillets.createInput()
+                distance = destination.get_distance()
+                filletInput.addConstantRadiusEdgeSet(target, adsk.core.ValueInput.createByString(str(distance)))
+                fillets.add(filletInput)
+            if isinstance(target, adsk.fusion.BRepFace):
+                filletInput = fillets.createInput()
+                distance = destination.get_distance()
+                edgeCollection = adsk.core.ObjectCollection.create()
+                for edge in target.edges:
+                    edgeCollection.add(edge)
+                filletInput.addConstantRadiusEdgeSet(edgeCollection, adsk.core.ValueInput.createByString(str(distance)), True)
+                filletInput.isRollingBallCorner = True
+                constRadiusInput = filletInput.edgeSetInputs.addConstantRadiusEdgeSet(edgeCollection, adsk.core.ValueInput.createByString(str(distance)), True)
+                constRadiusInput.continuity = adsk.fusion.SurfaceContinuityTypes.TangentSurfaceContinuityType
+                h = fillets.add(filletInput)
 
-'''
-def push_pull(targets: list, destination: Destination):
-    cmd = ui.commandDefinitions.itemById('FusionPressPullCommand')
-    namedValues = adsk.core.NamedValues.create()
-    target_collection = adsk.core.ObjectCollection.create()
-    for target in targets:
-        target_collection.add(target.get_target())
-    valueInput_targets = adsk.core.ValueInput.createByObject(targets[0].get_target())
-    namedValues.add('selection', valueInput_targets)
-    distance = destination.get_distance()
-    valueInput_distance = adsk.core.ValueInput.createByString(str(distance))
-    namedValues.add('distance', valueInput_distance)
-    cmd.commandCreated.add(lambda args: args.command.commandInputs.itemById('selection').addSelection(target_collection))
-    def on_command_created(args):
-        args.command.commandInputs.itemById('distance').value = valueInput_distance
-    cmd.commandCreated.add(on_command_created)
-    cmd.execute(namedValues)
-    return "Push/Pulled"
-'''
+                
+    except:
+        return traceback.format_exc()
+    return "Fillet added"
+
+
+
+
+
+
 import adsk.core, adsk.fusion, adsk.cam, traceback
 
-def createCommand(context):
-    ui = None
+def push_pull(targets: list, destination: Destination):
+
     try:
         app = adsk.core.Application.get()
         ui = app.userInterface
+        ui.messageBox('Press Pull Command')
 
-        # Create a new command
-        cmdDef = ui.commandDefinitions.addButtonDefinition(
-            'MyCommandId', 'My Command', 'This is a test command'
-        )
-
-        def commandCreatedHandler(args):
+        # Get the Press Pull Command
+        cmdDef = ui.commandDefinitions.itemById('FusionPressPullCommand')
+        
+        # Event handler to modify the inputs before command is shown
+        def commandCreatedHandler(args: adsk.core.CommandCreatedEventArgs):
             inputs = args.command.commandInputs
+            input = inputs.itemById('Selection')
+            if input:
+                for target in targets:
+                    input.addSelection(target.get_target())
+            # Modify the inputs here (for example, changing the distance of the pull)
+            distance = destination.get_distance(targets[0])
+            distanceInput = inputs.itemById('Distance')
+            if distanceInput:
+                distanceInput.value = adsk.core.ValueInput.createByReal(distance)
 
-            # Add a text box input
-            textInput = inputs.addStringValueInput('textBoxId', 'Enter Text', 'Default Text')
+            # Optionally, other inputs can be modified similarly, based on available input IDs
 
-            # Add a number input
-            numberInput = inputs.addValueInput('numberBoxId', 'Enter Value', '', adsk.core.ValueInput.createByReal(10))
-
+        # Hook up the event handler
         cmdDef.commandCreated.add(commandCreatedHandler)
 
         # Execute the command
         cmdDef.execute()
 
-    except:
+    except Exception as e:
         if ui:
-            ui.messageBox('Failed:\n{}'.format(traceback.format_exc()))
+            ui.messageBox('Failed:\n{}'.format(str(e)))
+
+
 
 
 def get_target_type(target):
     return type(target.get_target())
+
 
 
 command_dict = {
@@ -170,6 +198,7 @@ command_dict = {
         "camera_move": camera_move,
         "extrude": extrude,
         "push_pull": push_pull,
+        "fillet": fillet
     }
 
 #['command: camera_move', '', 'destination:  |   | 0 0 1']
@@ -189,16 +218,17 @@ def parse_command(command: str):
         destinationString = lines[2].split(": ")[1]
         length, prep, target_destination = destinationString.split(" | ")
         target_destination = Target(target_destination)
-        try:
-            destination = Destination(length= length, prep= prep, destination= target_destination)
-        except:
-            destination = None
+        destination = Destination(length= length, prep= prep, destination= target_destination)
         c = command_dict[command](targets, destination)
+        ta.assign_letters_to_visible_faces()
         return c
         return command, targets, destination
     except Exception as e:
         print(f"error parsing command: " + traceback.format_exc())
         return "error parsing command: " + traceback.format_exc()
+
+
 def run_command(command: str):
     command, targets, destination = parse_command(command)
+    
     return command_dict[command](targets, destination)

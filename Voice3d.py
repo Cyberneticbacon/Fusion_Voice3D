@@ -6,7 +6,10 @@ import threading
 from . import functions as f
 from . import target_assignment as ta
 import adsk.core
+from . import find_ids as fi
 from . import all_functions as af
+import adsk.fusion as fusion
+
 server = None
 
 def run(context):
@@ -14,7 +17,11 @@ def run(context):
         if context == "quit":
             raise Exception("Quit")
         global server
+        app = adsk.core.Application.get()
+        ui = app.userInterface
         #af.run(context)
+        #cmdDef = ui.commandDefinitions.itemById('FusionPressPullCommand')
+        #fi.show_command_input_ids_in_message_box(cmdDef)
         ta.assign_letters_to_visible_faces()
         server = SimpleXMLRPCServer(("localhost", 8000))
         server.register_function(f.parse_command, "parse_command")
