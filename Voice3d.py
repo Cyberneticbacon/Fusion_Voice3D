@@ -1,4 +1,5 @@
 
+import adsk.fusion
 from . import commands
 from .lib import fusionAddInUtils as futil
 from xmlrpc.server import SimpleXMLRPCServer
@@ -19,10 +20,7 @@ def run(context):
         global server
         app = adsk.core.Application.get()
         ui = app.userInterface
-        #af.run(context)
-        #cmdDef = ui.commandDefinitions.itemById('FusionPressPullCommand')
-        #fi.show_command_input_ids_in_message_box(cmdDef)
-        ta.assign_letters_to_visible_faces()
+        ta.grab_list_of_targets("edge")
         server = SimpleXMLRPCServer(("localhost", 8000))
         server.register_function(f.parse_command, "parse_command")
         # Run the server in a separate thread
@@ -31,7 +29,8 @@ def run(context):
         server_thread.start()
         print("Server is running...")
 
-    except:
+    except Exception as e:
+        ui.messageBox('Failed:\n{}'.format(str(e)))
         futil.handle_error('run')
 
 

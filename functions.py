@@ -63,10 +63,9 @@ class Destination:
             if self.prep in ["from", "past"]:
                 return target.get_target().distance_to(self.destination.get_target()) + self.length.to_str()
 
-def add(x, y):
-    return x + y
 
 def camera_move(targets: list, destination: Destination):
+    app = adsk.core.Application.get()
     cam = app.activeViewport.camera
     if len(targets) == 0:
         x, y, z = destination.destination.name.split(" ")
@@ -80,19 +79,6 @@ def camera_move(targets: list, destination: Destination):
     app.activeViewport.refresh()
     return "Camera moved"
 
-def create_profile(face: adsk.fusion.BRepFace):
-    app = adsk.core.Application.get()
-    design = app.activeProduct
-    root_comp = design.rootComponent
-
-    # Create a sketch on the selected face
-    sketch = root_comp.sketches.add(face)
-
-    # Project the face's edges
-    for edge in face.edges:
-        sketch.project(edge)
-
-    return sketch.profiles.item(0)
 def extrude(targets: list, destination: Destination):
     app = adsk.core.Application.get()
     design = app.activeProduct
@@ -143,12 +129,27 @@ def fillet(targets: list, destination: Destination):
         return traceback.format_exc()
     return "Fillet added"
 
-
-
-
-
-
-import adsk.core, adsk.fusion, adsk.cam, traceback
+def move(targets: list, destination: Destination):
+    try:
+        app = adsk.core.Application.get()
+        design = app.activeProduct
+        root_comp = design.rootComponent
+        move_features = root_comp.features.moveFeatures
+        for target in targets:
+            target = target.get_target()
+            if isinstance(target, adsk.fusion.BRepFace):
+                moveInput = move_features.createInput(target)
+                distance = destination.get_distance()
+                moveInput.setToEntity(adsk.fusion.BRepEntity.cast(target), adsk.core.ValueInput.createByString(str(distance)))
+                move_features.add(moveInput)
+            if isinstance(target, adsk.fusion.BRepEdge):
+                moveInput = move_features.createInput(target)
+                distance = destination.get_distance()
+                moveInput.setToEntity(adsk.fusion.BRepEntity.cast(target), adsk.core.ValueInput.createByString(str(distance)))
+                move_features.add(moveInput)
+    except:
+        return traceback.format_exc()
+    return "Moved"
 
 def push_pull(targets: list, destination: Destination):
 
@@ -186,19 +187,28 @@ def push_pull(targets: list, destination: Destination):
             ui.messageBox('Failed:\n{}'.format(str(e)))
 
 
-
-
+def view_edges():
+    ta.grab_list_of_targets("edge")
+def view_faces():
+    ta.grab_list_of_targets("face")
+def view_vertices():
+    ta.grab_list_of_targets("vertex")
 def get_target_type(target):
     return type(target.get_target())
 
 
 
 command_dict = {
-        "add": add, 
         "camera_move": camera_move,
         "extrude": extrude,
-        "push_pull": push_pull,
-        "fillet": fillet
+        "fillet": fillet,
+        "move": move,
+        "edges": view_edges,
+        "faces": view_faces,
+        "vertices": view_vertices,
+
+
+
     }
 
 #['command: camera_move', '', 'destination:  |   | 0 0 1']

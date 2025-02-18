@@ -2,10 +2,20 @@ import adsk.fusion
 import adsk.core
 from adsk.core import Vector3D
 import threading
+import traceback
 
 
+def grab_point_on_target(target):
+    if isinstance(target, adsk.fusion.BRepFace):
+        return target.pointOnFace
+    elif isinstance(target, adsk.fusion.BRepEdge):
+        return target.pointOnEdge
+    elif isinstance(target, adsk.fusion.BRepVertex):
+        return target.geometry
 
 app = adsk.core.Application.get()
+ui = app.userInterface
+
 def grab_list_of_targets(type):
     design = design = app.activeProduct
     cam_point = app.activeViewport.camera.eye
@@ -13,18 +23,19 @@ def grab_list_of_targets(type):
     bodies = component.bRepBodies
     target_list = []
     if type == "face":
+        # Grab all faces
         for body in bodies:
             for face in body.faces:
-                target_list.append(component.findBRepUsingRay(cam_point, face.pointOnFace, adsk.fusion.BRepEntityTypes.BRepFaceEntityType).item(0))
+                target_list.append(face)
     elif type == "edge":
+        # Grab all edges
         for body in bodies:
             for edge in body.edges:
-                target_list.append(component.findBRepUsingRay(cam_point, edge.pointOnEdge, adsk.fusion.BRepEntityTypes.BRepEdgeEntityType).item(0))
-    elif type == "bodies":
+                target_list.append(edge)
+    elif type == "vertex":
         for body in bodies:
-            target_list.append(body)
-    target_list = list(set(target_list))
-    
+            for vertex in body.vertices:
+                target_list.append(vertex)
     color_names = ["BLUE", "GREEN", "RED", "YELLOW", "PURPLE", "CYAN"]
     color_wheel = [adsk.core.Color.create(0, 0, 120, 122), adsk.core.Color.create(0, 120, 0, 122), adsk.core.Color.create(120, 0, 0, 122), adsk.core.Color.create(120, 120, 0, 122), adsk.core.Color.create(120, 0, 120, 122), adsk.core.Color.create(0, 120, 120, 122)]
     color_effect = adsk.fusion.CustomGraphicsSolidColorEffect.create(adsk.core.Color.create(0, 0, 120, 122))
@@ -46,9 +57,9 @@ def grab_list_of_targets(type):
             print(f"Face ID: {target.tempId}, Letter: {letter}")
             target.attributes.add("talon.labels", "color:letter", color_names[color_index % len(color_names)] + ":" + letter)
             temp_graphics = component.customGraphicsGroups.add()
-            startPoint = target.pointOnFace
-            endPoint = adsk.core.Point3D.create(target.pointOnFace.x, target.pointOnFace.y, target.pointOnFace.z)
-            dist_to_camera = app.activeViewport.camera.eye.vectorTo(target.pointOnFace)
+            startPoint = grab_point_on_target(target)
+            endPoint = adsk.core.Point3D.create(startPoint.x, startPoint.y, startPoint.z)
+            dist_to_camera = app.activeViewport.camera.eye.vectorTo(startPoint)
             dist_to_camera.normalize()
             dist_to_camera.scaleBy(-1)
             endPoint.translateBy(adsk.core.Vector3D.create(dist_to_camera.x, dist_to_camera.y + 0.225, dist_to_camera.z + 0.155))
@@ -59,11 +70,20 @@ def grab_list_of_targets(type):
             line.color = color_effect
             letterPosition = endPoint
             transform = adsk.core.Matrix3D.create()
-            (result, faceNormal) = target.evaluator.getNormalAtPoint(target.pointOnFace)
+            if isinstance(target, adsk.fusion.BRepFace):
+                (result, faceNormal) = target.evaluator.getNormalAtPoint(startPoint)
+                print("face")
+            elif isinstance(target, adsk.fusion.BRepEdge):
+                (result, faceNormal) = target.evaluator.getTangent(parameter=0)
+                print("edge")
+            elif isinstance(target, adsk.fusion.BRepVertex):
+                faceNormal = adsk.core.Vector3D.create(0, 0, 1)
+                result = True
+                print("vertex")
             if not result:
                 faceNormal.normalize()
                 faceNormal.scaleBy(0.5)
-            cameraNormal = app.activeViewport.camera.eye.vectorTo(target.pointOnFace)
+            cameraNormal = app.activeViewport.camera.eye.vectorTo(startPoint)
             cameraNormal.normalize()
             cameraNormal.scaleBy(0.5)
             upVector = app.activeViewport.camera.upVector
@@ -77,15 +97,14 @@ def grab_list_of_targets(type):
             text.color = color_effect
             
         except Exception as e:
+            #ui.messageBox(traceback.format_exc())
             print(f"Error: {e}")
     app.activeViewport.refresh()
 
 
 
 
-
-
-
+'''
 def assign_letters_to_visible_faces_private():
     design = app.activeProduct
     root_comp = design.rootComponent
@@ -167,5 +186,6 @@ def assign_letters_to_visible_faces():
     thread.start()
     return "Letters assigned to visible faces"
 
+'''
     
 
