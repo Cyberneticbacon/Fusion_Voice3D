@@ -20,7 +20,7 @@ def run(context):
         global server
         app = adsk.core.Application.get()
         ui = app.userInterface
-        ta.grab_list_of_targets("edge")
+        ta.grab_list_of_targets("face")
         server = SimpleXMLRPCServer(("localhost", 8000))
         server.register_function(f.parse_command, "parse_command")
         # Run the server in a separate thread

@@ -1,9 +1,7 @@
 import adsk.fusion
 import adsk.core
 from adsk.core import Vector3D
-import threading
-import traceback
-
+import configparser
 
 def grab_point_on_target(target):
     if isinstance(target, adsk.fusion.BRepFace):
@@ -16,7 +14,21 @@ def grab_point_on_target(target):
 app = adsk.core.Application.get()
 ui = app.userInterface
 
-def grab_list_of_targets(type):
+def grab_list_of_targets(type = "default"):
+    if type not in ["face", "edge", "vertex", "default"]:
+        raise Exception("Invalid type")
+    file_name = "config.ini"
+    if type == "default":
+        with open(file_name, "r") as configfile:
+            config = configparser.ConfigParser()
+            config.read('config.ini')
+            type = config['DEFAULT']['type']
+    else:
+        with open(file_name, "w") as configfile:
+            config = configparser.ConfigParser()
+            config['DEFAULT'] = {'type': type}
+            config.write(configfile)
+
     design = design = app.activeProduct
     cam_point = app.activeViewport.camera.eye
     component = design.rootComponent
@@ -40,7 +52,7 @@ def grab_list_of_targets(type):
     color_wheel = [adsk.core.Color.create(0, 0, 120, 122), adsk.core.Color.create(0, 120, 0, 122), adsk.core.Color.create(120, 0, 0, 122), adsk.core.Color.create(120, 120, 0, 122), adsk.core.Color.create(120, 0, 120, 122), adsk.core.Color.create(0, 120, 120, 122)]
     color_effect = adsk.fusion.CustomGraphicsSolidColorEffect.create(adsk.core.Color.create(0, 0, 120, 122))
     color_index = 0
-    if component.customGraphicsGroups.count > 0:
+    while component.customGraphicsGroups.count > 0:
         component.customGraphicsGroups.item(0).deleteMe()
     design = app.activeProduct
     attribs = design.findAttributes('talon.labels', 'color:letter')

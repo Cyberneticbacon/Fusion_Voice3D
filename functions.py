@@ -110,7 +110,12 @@ def fillet(targets: list, destination: Destination):
             if isinstance(target, adsk.fusion.BRepEdge):
                 filletInput = fillets.createInput()
                 distance = destination.get_distance()
-                filletInput.addConstantRadiusEdgeSet(target, adsk.core.ValueInput.createByString(str(distance)))
+                edgeCollection = adsk.core.ObjectCollection.create()
+                edgeCollection.add(target)
+                filletInput.addConstantRadiusEdgeSet(edgeCollection, adsk.core.ValueInput.createByString(str(distance)), True)
+                filletInput.isRollingBallCorner = True
+                constRadiusInput = filletInput.edgeSetInputs.addConstantRadiusEdgeSet(edgeCollection, adsk.core.ValueInput.createByString(str(distance)), True)
+                constRadiusInput.continuity = adsk.fusion.SurfaceContinuityTypes.TangentSurfaceContinuityType
                 fillets.add(filletInput)
             if isinstance(target, adsk.fusion.BRepFace):
                 filletInput = fillets.createInput()
@@ -122,7 +127,7 @@ def fillet(targets: list, destination: Destination):
                 filletInput.isRollingBallCorner = True
                 constRadiusInput = filletInput.edgeSetInputs.addConstantRadiusEdgeSet(edgeCollection, adsk.core.ValueInput.createByString(str(distance)), True)
                 constRadiusInput.continuity = adsk.fusion.SurfaceContinuityTypes.TangentSurfaceContinuityType
-                h = fillets.add(filletInput)
+                fillets.add(filletInput)
 
                 
     except:
@@ -151,6 +156,35 @@ def move(targets: list, destination: Destination):
         return traceback.format_exc()
     return "Moved"
 
+def offset_feature(targets: list, destination: Destination):
+    try:
+        app = adsk.core.Application.get()
+        design = app.activeProduct
+        root_comp = design.rootComponent
+        offset_features = root_comp.features.offsetFeatures
+        distance = destination.get_distance()
+        object_collection = adsk.core.ObjectCollection.create()
+        for target in targets:
+            target = target.get_target()
+            object_collection.add(target)
+        offsetInput = offset_features.createInput(object_collection, distance=adsk.core.ValueInput.createByString(str(distance)), operation=adsk.fusion.FeatureOperations.NewBodyFeatureOperation)
+        offset_features.add(offsetInput)
+    except:
+        return traceback.format_exc()
+    return "Offset"
+
+def undo(targets: list, destination: Destination):
+    app = adsk.core.Application.get()
+    ui = app.userInterface
+    app.activeDocument.design.timeline.undo()
+    return "Undone"
+
+def redo(targets: list, destination: Destination):
+    app = adsk.core.Application.get()
+    ui = app.userInterface
+    app.activeDocument.design.timeline.redo()
+    return "Redone"
+'''
 def push_pull(targets: list, destination: Destination):
 
     try:
@@ -185,14 +219,17 @@ def push_pull(targets: list, destination: Destination):
     except Exception as e:
         if ui:
             ui.messageBox('Failed:\n{}'.format(str(e)))
+'''
 
-
-def view_edges():
+def view_edges(targets: list, destination: Destination):
     ta.grab_list_of_targets("edge")
-def view_faces():
+    return "Edges viewed"
+def view_faces(targets: list, destination: Destination):
     ta.grab_list_of_targets("face")
-def view_vertices():
+    return "Faces viewed"
+def view_vertices(targets: list, destination: Destination):
     ta.grab_list_of_targets("vertex")
+    return "Vertices viewed"
 def get_target_type(target):
     return type(target.get_target())
 
@@ -206,6 +243,10 @@ command_dict = {
         "edges": view_edges,
         "faces": view_faces,
         "vertices": view_vertices,
+        "offset": offset_feature,
+        "undo": undo,
+        "redo": redo
+
 
 
 
@@ -230,15 +271,10 @@ def parse_command(command: str):
         target_destination = Target(target_destination)
         destination = Destination(length= length, prep= prep, destination= target_destination)
         c = command_dict[command](targets, destination)
-        ta.assign_letters_to_visible_faces()
+        if command not in ["edges", "faces", "vertices"]:
+            ta.grab_list_of_targets("default")
         return c
         return command, targets, destination
     except Exception as e:
         print(f"error parsing command: " + traceback.format_exc())
         return "error parsing command: " + traceback.format_exc()
-
-
-def run_command(command: str):
-    command, targets, destination = parse_command(command)
-    
-    return command_dict[command](targets, destination)
