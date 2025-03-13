@@ -173,17 +173,29 @@ def offset_feature(targets: list, destination: Destination):
         return traceback.format_exc()
     return "Offset"
 
+
 def undo(targets: list, destination: Destination):
     app = adsk.core.Application.get()
-    ui = app.userInterface
-    app.activeDocument.design.timeline.undo()
+    timeline = app.activeProduct.timeline
+    timeline.markerPosition = timeline.markerPosition - 1
     return "Undone"
+
+def clear_after_undo(targets: list, destination: Destination):
+    app = adsk.core.Application.get()
+    timeline = app.activeProduct.timeline
+    timeline.deleteAllAfterMarker()
+    return "Cleared after undo"
+
+
+
 
 def redo(targets: list, destination: Destination):
     app = adsk.core.Application.get()
     ui = app.userInterface
-    app.activeDocument.design.timeline.redo()
+    timeline = app.activeProduct.timeline
+    timeline.markerPosition = timeline.markerPosition + 1
     return "Redone"
+    
 '''
 def push_pull(targets: list, destination: Destination):
 
@@ -245,11 +257,8 @@ command_dict = {
         "vertices": view_vertices,
         "offset": offset_feature,
         "undo": undo,
-        "redo": redo
-
-
-
-
+        "redo": redo,
+        "present": clear_after_undo,
     }
 
 #['command: camera_move', '', 'destination:  |   | 0 0 1']
