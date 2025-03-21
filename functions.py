@@ -7,6 +7,7 @@ ui = app.userInterface
 from . import grab_target as gt
 from . import Voice3d
 from . import target_assignment as ta
+from . import construction_point as cp
 class Length:
     def flip(self):
         self.length = self.length * -1
@@ -41,6 +42,15 @@ class Target:
             target = gt.grab_target(self.name)
         # use descriptors to filter target
         return target
+    def get_coordinates(self):
+        target = self.get_target()
+        if isinstance(target, adsk.fusion.BRepFace):
+            return target.pointOnFace
+        elif isinstance(target, adsk.fusion.BRepEdge):
+            return target.pointOnEdge
+        elif isinstance(target, adsk.fusion.BRepVertex):
+            return target.geometry
+        
 class Destination:
     def __init__(self, length: str = None, prep: str = None, destination: Target = None):
         if " " in length:
@@ -62,6 +72,20 @@ class Destination:
                 return self.length.to_str()
             if self.prep in ["from", "past"]:
                 return target.get_target().distance_to(self.destination.get_target()) + self.length.to_str()
+
+    def get_coordinates(self, target: Target = None):
+        if target is None:
+            return "No target"
+        else:
+
+            if self.destination is None:
+                return target.get_coordinates() + self.length.to_str()
+            else:
+                return self.destination.get_coordinates()
+
+
+
+
 
 
 def camera_move(targets: list, destination: Destination):
@@ -196,6 +220,11 @@ def redo(targets: list, destination: Destination):
     timeline.markerPosition = timeline.markerPosition + 1
     return "Redone"
     
+def construct(targets: list, destination: Destination):
+    location = destination.destination.get_target()
+    cp = cp.Construction_Point(location.x, location.y, location.z)
+    return "Constructed"
+
 '''
 def push_pull(targets: list, destination: Destination):
 
@@ -242,6 +271,10 @@ def view_faces(targets: list, destination: Destination):
 def view_vertices(targets: list, destination: Destination):
     ta.grab_list_of_targets("vertex")
     return "Vertices viewed"
+def view_all(targets: list, destination: Destination):
+    ta.grab_list_of_targets("all")
+    return "All viewed"
+
 def get_target_type(target):
     return type(target.get_target())
 
@@ -255,10 +288,12 @@ command_dict = {
         "edges": view_edges,
         "faces": view_faces,
         "vertices": view_vertices,
+        "all": view_all,
         "offset": offset_feature,
         "undo": undo,
         "redo": redo,
         "present": clear_after_undo,
+        "construct": construct
     }
 
 #['command: camera_move', '', 'destination:  |   | 0 0 1']
@@ -280,7 +315,7 @@ def parse_command(command: str):
         target_destination = Target(target_destination)
         destination = Destination(length= length, prep= prep, destination= target_destination)
         c = command_dict[command](targets, destination)
-        if command not in ["edges", "faces", "vertices"]:
+        if command not in ["edges", "faces", "vertices", "all"]:
             ta.grab_list_of_targets("default")
         return c
         return command, targets, destination

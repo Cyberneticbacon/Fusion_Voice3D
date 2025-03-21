@@ -20,6 +20,14 @@ def run(context):
         global server
         app = adsk.core.Application.get()
         ui = app.userInterface
+        # add user parameters
+        user_params = app.activeProduct.userParameters
+        if user_params.itemByName("voice_3d_default_type") is None:
+            user_params.add('voice_3d_default_type', adsk.core.ValueInput.createByReal(0.0), "cm", "Default target type for voice3d, face, edge, vertex, or all")
+        
+
+        temp_graphics = app.activeProduct.rootComponent.customGraphicsGroups.add()
+        construction_points = app.activeProduct.rootComponent.customGraphicsGroups.add()
         ta.grab_list_of_targets("face")
         server = SimpleXMLRPCServer(("localhost", 8000))
         server.register_function(f.parse_command, "parse_command")
