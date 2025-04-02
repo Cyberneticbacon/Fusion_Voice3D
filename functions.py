@@ -54,7 +54,7 @@ class Target:
 class Destination:
     def __init__(self, length: str = None, prep: str = None, destination: Target = None):
         if " " in length:
-            self.length = Length(int(length.split(" ")[0]), length.split(" ")[1])
+            self.length = Length(float(length.split(" ")[0]), length.split(" ")[1])
         else:
             if length == "":
                 length = 0
@@ -72,14 +72,25 @@ class Destination:
                 return self.length.to_str()
             if self.prep in ["from", "past"]:
                 return target.get_target().distance_to(self.destination.get_target()) + self.length.to_str()
-
     def get_coordinates(self, target: Target = None):
         if target is None:
             return "No target"
         else:
-
             if self.destination is None:
-                return target.get_coordinates() + self.length.to_str()
+                if self.prep == "above":
+                    return target.get_target().get_coordinates() + adsk.core.Vector3D.create(0, 0, self.length.length)
+                if self.prep == "below":
+                    return target.get_target().get_coordinates() + adsk.core.Vector3D.create(0, 0, -self.length.length)
+                if self.prep == "left":
+                    return target.get_target().get_coordinates() + adsk.core.Vector3D.create(-self.length.length, 0, 0)
+                if self.prep == "right":
+                    return target.get_target().get_coordinates() + adsk.core.Vector3D.create(self.length.length, 0, 0)
+                if self.prep == "front":
+                    return target.get_target().get_coordinates() + adsk.core.Vector3D.create(0, -self.length.length, 0)
+                if self.prep == "back":
+                    return target.get_target().get_coordinates() + adsk.core.Vector3D.create(0, self.length.length, 0)
+                
+                return target.get_coordinates()
             else:
                 return self.destination.get_coordinates()
 
@@ -221,10 +232,12 @@ def redo(targets: list, destination: Destination):
     return "Redone"
     
 def construct(targets: list, destination: Destination):
-    location = destination.destination.get_target()
-    cp = cp.Construction_Point(location.x, location.y, location.z)
-    return "Constructed"
-
+    #location = destination.get_coordinates(targets[0])
+    location = targets[0].get_coordinates()
+    if location == None:
+        return "no location"
+    point = cp.Construction_Point(location.x, location.y, location.z)
+    return point.draw_point()
 '''
 def push_pull(targets: list, destination: Destination):
 

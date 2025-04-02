@@ -46,10 +46,7 @@ def stop(context):
     try:
         futil.clear_handlers()
         #threading.Thread(target=server.shutdown).start()
-        app = adsk.core.Application.get()
-        root_comp = app.activeProduct.rootComponent
-        while root_comp.customGraphicsGroups.count > 0:
-            root_comp.customGraphicsGroups.item(0).deleteMe()
+
         server.shutdown()
     except Exception as e:
         print(f"Error: {e}")
