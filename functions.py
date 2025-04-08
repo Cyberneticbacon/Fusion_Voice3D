@@ -106,11 +106,12 @@ def camera_move(targets: list, destination: Destination):
         x, y, z = destination.destination.name.split(" ")
         cam.eye = adsk.core.Point3D.create(float(x), float(y), float(z))
         cam.target = adsk.core.Point3D.create(0, 0, 0)
-        cam.upVector = adsk.core.Vector3D.create(0, 1, 0)
+        cam.upVector = adsk.core.Vector3D.create(0, 0, 1)
     else:
         pass
     cam.isFitView = True
     app.activeViewport.camera = cam
+    cam.upVector = adsk.core.Vector3D.create(0, 0, 1)
     app.activeViewport.refresh()
     return "Camera moved"
 
@@ -221,6 +222,53 @@ def clear_after_undo(targets: list, destination: Destination):
     timeline.deleteAllAfterMarker()
     return "Cleared after undo"
 
+import adsk.core, adsk.fusion, adsk.cam, traceback
+
+def create_cube(targets: list, destination: Destination):
+    x = destination.length.length
+    if x is None or x <= 0:
+        x = 5  # Default size if not specified
+    try:
+        # Get the application and user interface
+        app = adsk.core.Application.get()
+        ui = app.userInterface
+        design = app.activeProduct
+
+        # Get root component of the active design
+        rootComp = design.rootComponent
+
+        # Create a new sketch on the XY plane
+        sketches = rootComp.sketches
+        xyPlane = rootComp.xYConstructionPlane
+        sketch = sketches.add(xyPlane)
+
+        # Draw a square (x by x) on the XY plane
+        lines = sketch.sketchCurves.sketchLines
+        lines.addCenterPointRectangle(
+            adsk.core.Point3D.create(0, 0, 0),
+            adsk.core.Point3D.create(x / 2, x / 2, 0)
+        )
+
+        # Get the profile defined by the rectangle
+        prof = sketch.profiles.item(0)
+
+        # Create an extrusion input
+        extrudes = rootComp.features.extrudeFeatures
+        extInput = extrudes.createInput(prof, adsk.fusion.FeatureOperations.NewBodyFeatureOperation)
+
+        # Set the distance extent to x (cube depth)
+        distance = adsk.core.ValueInput.createByReal(x)
+        extInput.setDistanceExtent(False, distance)
+
+        # Create the extrusion
+        extrudes.add(extInput)
+
+        ui.messageBox(f"Cube of size {x}x{x}x{x} created successfully!")
+
+    except Exception as e:
+        return f"Failed:\n{traceback.format_exc()}"
+    return "Cube created"
+
 
 
 
@@ -292,7 +340,6 @@ def get_target_type(target):
     return type(target.get_target())
 
 
-
 command_dict = {
         "camera_move": camera_move,
         "extrude": extrude,
@@ -306,7 +353,8 @@ command_dict = {
         "undo": undo,
         "redo": redo,
         "present": clear_after_undo,
-        "construct": construct
+        "construct": construct,
+        "cube": create_cube,
     }
 
 #['command: camera_move', '', 'destination:  |   | 0 0 1']
